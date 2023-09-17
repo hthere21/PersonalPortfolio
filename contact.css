@@ -1,0 +1,143 @@
+.contact-form{
+    display: grid;
+    margin-top:  2.55rem;
+    padding: 1.35rem 1.35rem 1.35rem 1.35rem;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+  
+  .input-wrap{
+    position: relative;
+  }
+  
+  .input-wrap.w-100{
+    grid-column: span 2;
+  }
+  
+  .contact-input{
+    width: 100%;
+    background-color: hsla(var(--main-hue), 50%, 50%, 6.5%);
+    padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
+    outline: none;
+    border-radius: 30px;
+    color: var(--text-color);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: 0.3s;
+    border: 2px solid black;
+    box-shadow: 0 0 0 0px;
+  }
+  
+  .input-wrap label{
+    position: absolute;
+    top: 50%;
+    left: calc(1.35rem + 2px);
+    transform: translateY(-50%);
+    color: grey;
+    pointer-events: none;
+    transition: 0.25s;
+  }
+  
+  .input-wrap .icon{
+    position: absolute;
+    right: calc(1.35rem + 2px);
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 1.25rem;
+    transition: 0.3s;
+  }
+  
+  textarea.contact-input {
+    resize: none;
+    width: 100%;
+    min-height: 150px;
+  }
+  
+  textarea.contact-input ~ label {
+    top: 1.2rem;
+    transform: none;
+  }
+  
+  textarea.contact-input ~ .icon {
+    top: 1.3rem;
+    transform: none;
+  }
+  
+  .forms-wraper{
+    max-width: 32rem;
+  }
+  
+  .input-wrap.focus .contact-input{
+    background-color: white;
+    border: 2px solid;
+    box-shadow: 0 0 0 5px white;
+  }
+  
+  .input-wrap.focus .label{
+    color:  white;
+  }
+  
+  .input-wrap.focus .icon{
+    color:  white;
+  }
+  
+  .input-wrap.not-empty label{
+    font-size: .66rem;
+    top: 0.75rem;
+    transform: translateY(0);
+  }
+  
+  .contact-buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+    grid-column: span 2;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 1.1rem 2rem;
+    color: black;
+    border-radius: 40px;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: inherit;
+  }
+  
+  .btn:hover {
+    background-color: #89d6fb;
+  }
+  
+  .btn.upload {
+    position: relative;
+    /*background-color: #89d6fb;*/
+  }
+  
+  .btn.upload:hover .icon{
+    background-color: whitesmoke;
+  }
+  
+  .btn.upload:hover{
+    background-color: whitesmoke;
+  }
+  
+  .btn.upload span:hover{
+    color: whitesmoke !important;
+  }
+  
+  .btn.upload input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    opacity: 0;
+    background-color: #89d6fb;
+  }

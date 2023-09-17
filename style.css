@@ -1,97 +1,111 @@
-*{
-    padding: 0;
-    margin:0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    background: #d4f0fc;
-}
-body {
-  font-family: 'Roboto', sans-serif;
-}
-nav {
-    margin: 20px 20px 20px 20px;
-    padding: 5px 5px 5px 5px;
-    background: #02577a;
-    border-radius: 45px;
-    height: 90px;
-}
-label.logo{
-    color: goldenrod;
-    font-size: 40px;
-    line-height: 80px;
-    padding: 0px 50px;
-    font-weight: bold;
-    background: #02577a;
-}
-nav ul{
-    float: right;
-    margin-right: 25px;
-    background: #02577a;
-    border-radius: 45px;
-}
-nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-    background: #02577a;
-}
-nav ul li a{
-    color: gold;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-align: center;
-    font-size: 1.2rem;
-    cursor: pointer;
-    position: relative;
-        background: #02577a;
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-nav ul li::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #2192ff;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f5f2e8;
 }
-a {
+
+nav {
+  position: fixed;
+  width: calc(100% - 10px);
+  margin: 5px 5px 10px 5px;
+  margin-left: 5px;
+  padding: 5px;
+  background: rgba(127, 200, 248, 0.8);
+  border-radius: 45px;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 2;
+}
+
+.navbar label.logo {
+  margin-left: 1.5rem;
+  color: gold;
+  font-size: 3rem;
+  line-height: 80px;
+  padding: 0px 15px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.navbar ul {
+  float: right;
+  margin-right: 1.5rem;
+  border-radius: 45px;
+}
+.navbar ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+.navbar ul li a {
+  color: whitesmoke;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-align: center;
+  font-size: 1.3rem;
+  cursor: pointer;
   position: relative;
 }
 
+.navbar ul li::after {
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+.navbar a {
+  position: relative;
+}
 
-ul li a:hover {
+.navbar ul li a:hover {
   transform: scale(2);
   opacity: 1;
   filter: blur(0);
   text-decoration: none;
   color: gold;
-  font-size: 28px; /* Adjust the font size as desired */
+  font-size: 2rem;
+  transition: 0.3s;
 }
 
-ul li a:before{
-  content:'';
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  /* background:#ff497c; */
-  transition:0.5s;
-  transform-origin:right;
-  transform:scaleX(0);
-  z-index:-1;
+.navbar ul li a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
 }
 
-ul li a:hover:before{
-  transition:transform 0.5s;
-  transform-origin:left;
-  transform:scaleX(1);
+.navbar ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
 }
-.checkbtn{
+.checkbtn {
   font-size: 40px;
   color: whitesmoke;
   float: right;
@@ -99,230 +113,71 @@ ul li a:hover:before{
   margin-right: 40px;
   cursor: pointer;
   display: none;
-  background: #02577a;
 }
-#check{
+#check {
   display: none;
 }
-.fa-bars:before, .fa-navicon:before {
+
+.fa-bars:before,
+.fa-navicon:before {
   content: "\f0c9";
-  background: #02577a;
 }
-@media (max-width: 952px){
-  label.logo{
+
+@media (max-width: 952px) {
+  .navbar label.logo {
     font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #02577a;
-    top: 110px;
-    bottom: 110px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    border-radius: 45px;
-    opacity: 0.975
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover{
-    background: none;
-    color: #0082e6;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-}
-@media (max-width: 400px) {
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 85vh;
-    background: #02577a;
-    top: 100px;
-    bottom: 110px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-    border-radius: 45px;
-    opacity: 0.975;
-  }
-
-  label.logo {
-    font-size: 28px;
     padding-left: 10px;
-    padding-right: 5px;
   }
-  nav ul li a {
+  .navbar nav ul li a {
     font-size: 16px;
-  }
-
-  nav {
-    margin: 10px;
+    padding: 7px 10px;
   }
 }
 
-/*---------------------------------contact------------------------------------------*/
-.contact-form{
-  display: grid;
-  margin-top:  2.55rem;
-  padding: 1.35rem 1.35rem 1.35rem 1.35rem;
-  grid-template-columns: repeat(2, 1fr);
-  column-gap: 2rem;
-  row-gap: 1rem;
-}
-
-.input-wrap{
-  position: relative;
-}
-
-.input-wrap.w-100{
-  grid-column: span 2;
-}
-
-.contact-input{
-  width: 100%;
-  background-color: hsla(var(--main-hue), 50%, 50%, 6.5%);
-  padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
-  outline: none;
-  border-radius: 30px;
-  color: var(--text-color);
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: 0.3s;
-  border: 2px solid black;
-  box-shadow: 0 0 0 0px;
-}
-
-.input-wrap label{
-  position: absolute;
-  top: 50%;
-  left: calc(1.35rem + 2px);
-  transform: translateY(-50%);
-  color: grey;
-  pointer-events: none;
-  transition: 0.25s;
-}
-
-.input-wrap .icon{
-  position: absolute;
-  right: calc(1.35rem + 2px);
-  top: 50%;
-  transform: translateY(-50%);
-  pointer-events: none;
-  font-size: 1.25rem;
-  transition: 0.3s;
-}
-
-textarea.contact-input {
-  resize: none;
-  width: 100%;
-  min-height: 150px;
-}
-
-textarea.contact-input ~ label {
-  top: 1.2rem;
-  transform: none;
-}
-
-textarea.contact-input ~ .icon {
-  top: 1.3rem;
-  transform: none;
-}
-
-.forms-wraper{
-  max-width: 32rem;
-}
-
-.input-wrap.focus .contact-input{
-  background-color: #d4f0fc;
-  border: 2px solid;
-  box-shadow: 0 0 0 5px #89d6fb;
-}
-
-.input-wrap.focus .label{
-  color:  #89d6fb;
-}
-
-.input-wrap.focus .icon{
-  color:  #89d6fb;
-}
-
-.input-wrap.not-empty label{
-  font-size: .66rem;
-  top: 0.75rem;
-  transform: translateY(0);
-}
-
-.contact-buttons{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
-  margin-top: 1rem;
-  width: 100%;
-  grid-column: span 2;
-}
-
-.btn {
-  display: inline-block;
-  padding: 1.1rem 2rem;
-  color: black;
-  border-radius: 40px;
-  font-weight: 500;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: 0.3s;
-  font-family: inherit;
-}
-
-.btn:hover {
-  background-color: #89d6fb;
-}
-
-.btn.upload {
-  position: relative;
-  /*background-color: #89d6fb;*/
-}
-
-.btn.upload:hover .icon{
-  background-color: whitesmoke;
-}
-
-.btn.upload:hover{
-  background-color: whitesmoke;
-}
-
-.btn.upload span:hover{
-  color: whitesmoke !important;
-}
-
-.btn.upload input {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  cursor: pointer;
-  opacity: 0;
-  background-color: #89d6fb;
+@media (max-width: 858px) {
+  .navbar nav {
+    margin-left: 0;
+    opacity: 99.9%;
+    width: 100%;
+  }
+  .checkbtn {
+    display: block;
+  }
+  .navbar ul {
+    position: fixed;
+    width: 100vw;
+    height: 95vh;
+    background: #7fc8f8;
+    top: 80px;
+    left: -110%;
+    text-align: center;
+    transition: all 0.5s;
+    opacity: 1 !important;
+    overflow: hidden;
+  }
+  .navbar ul li {
+    display: block;
+    margin: 20px 0;
+    line-height: 5rem;
+  }
+  .navbar ul li a {
+    font-size: 2rem;
+    padding: 7px 20px;
+  }
+  .navbar ul li a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+    text-decoration: none;
+    color: gold;
+    font-size: 1rem;
+  }
+  #check:checked ~ ul {
+    left: 0;
+    right: unset; /* Remove the right property */
+  }
+  .navbar label.logo {
+    order: -1; /* Move the label to the left */
+    margin-left: 1.5rem;
+  }
 }
