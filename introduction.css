@@ -1,7 +1,7 @@
 /* Default styles for larger screens */
 .first-intro {
   padding: 90px 100px 2rem 100px;
-  height: auto;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -175,6 +175,207 @@
   height: auto;
   border-radius: 8px;
 }
+/* Education  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
+
+.education *,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.education {
+  --color: rgba(30, 30, 30);
+  --bgColor: rgba(245, 245, 245);
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  font-family: "Poppins", sans-serif;
+  color: var(--color);
+  background: var(--bgColor);
+}
+
+.education h1 {
+  text-align: center;
+}
+
+.education ul {
+  --col-gap: 2rem;
+  --row-gap: 2rem;
+  --line-w: 0.25rem;
+  display: grid;
+  grid-template-columns: var(--line-w) 1fr;
+  grid-auto-columns: max-content;
+  column-gap: var(--col-gap);
+  list-style: none;
+  width: min(60rem, 90%);
+  margin-inline: auto;
+}
+
+/* line */
+.education ul::before {
+  content: "";
+  grid-column: 1;
+  grid-row: 1 / span 20;
+  background: rgb(225, 225, 225);
+  border-radius: calc(var(--line-w) / 2);
+}
+
+
+/* row gaps */
+.education ul li:not(:last-child) {
+  margin-bottom: var(--row-gap);
+}
+
+/* card */
+.education ul li {
+  grid-column: 2;
+  --inlineP: 1.5rem;
+  margin-inline: var(--inlineP);
+  grid-row: span 2;
+  display: grid;
+  grid-template-rows: min-content min-content min-content;
+}
+
+/* date */
+.education ul li .date {
+  --dateH: 3rem;
+  height: var(--dateH);
+  margin-inline: calc(var(--inlineP) * -1);
+
+  text-align: center;
+  background-color: var(--accent-color);
+
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+
+  display: grid;
+  place-content: center;
+  position: relative;
+
+  border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
+}
+
+/* date flap */
+.education ul li .date::before {
+  content: "";
+  width: var(--inlineP);
+  aspect-ratio: 1;
+  background: var(--accent-color);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
+  position: absolute;
+  top: 100%;
+
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+  right: 0;
+}
+
+/* circle */
+.education ul li .date::after {
+  content: "";
+  position: absolute;
+  width: 2rem;
+  aspect-ratio: 1;
+  background: var(--bgColor);
+  border: 0.3rem solid var(--accent-color);
+  border-radius: 50%;
+  top: 50%;
+
+  transform: translate(50%, -50%);
+  right: calc(100% + var(--col-gap) + var(--line-w) / 2);
+}
+
+/* title descr */
+.education ul li .title,
+ul li .descr {
+  background: var(--bgColor);
+  position: relative;
+  padding-inline: 1.5rem;
+}
+
+.education .descr {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: whitesmoke;
+}
+.education ul li .title {
+  overflow: hidden;
+  padding-block-start: 1.5rem;
+  padding-block-end: 1rem;
+  font-weight: 500;
+}
+.education ul li .descr {
+  padding-block-end: 1.5rem;
+  font-weight: 300;
+}
+
+/* shadows */
+.education ul li .title::before,
+ul li .descr::before {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 0.5rem;
+  background: rgba(0, 0, 0, 0.5);
+  left: 50%;
+  border-radius: 50%;
+  filter: blur(4px);
+  transform: translate(-50%, 50%);
+}
+.education ul li .title::before {
+  bottom: calc(100% + 0.125rem);
+}
+
+.education ul li .descr::before {
+  z-index: -1;
+  bottom: 0.25rem;
+}
+
+@media (min-width: 40rem) {
+  .education ul {
+    grid-template-columns: 1fr var(--line-w) 1fr;
+  }
+  .education ul::before {
+    grid-column: 2;
+  }
+  .education ul li:nth-child(odd) {
+    grid-column: 1;
+  }
+  .education ul li:nth-child(even) {
+    grid-column: 3;
+  }
+
+  /* start second card */
+  .education ul li:nth-child(2) {
+    grid-row: 2/4;
+  }
+
+  .education ul li:nth-child(odd) .date::before {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+    left: 0;
+  }
+
+  .education ul li:nth-child(odd) .date::after {
+    transform: translate(-50%, -50%);
+    left: calc(100% + var(--col-gap) + var(--line-w) / 2);
+  }
+  .education ul li:nth-child(odd) .date {
+    border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+  }
+}
+
+.education .credits {
+  margin-top: 1rem;
+  text-align: right;
+}
+.education .credits a {
+  color: var(--color);
+}
 
 /* My Work Section */
 .my-work {
@@ -184,10 +385,11 @@
 
 .projects {
   display: flex;
-  flex-direction: column; /* Stack projects vertically */
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 20px 0;
+  padding: 0 100px 0 100px;
 }
 
 .project {
@@ -196,7 +398,7 @@
   align-items: center;
   margin: 20px 20px;
   text-align: left;
-  width: 800px;
+  width: auto;
 }
 
 .project h2 {
@@ -257,13 +459,15 @@
 /* Skill section */
 .skill {
   background-color: #e3f6f5;
-  height: 100vh;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .technical-skill {
   display: grid;
   grid-template-columns: 1fr 3fr;
   gap: 30px;
-  max-width: 1200px;
+  width: auto;
   align-items: center;
   justify-content: center;
   position: relative;
@@ -282,7 +486,7 @@
 
 .programming-language-card {
   border-radius: 10px;
-  width: 400px;
+  width: auto;
   margin: 10px;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   background-color: #fff;
@@ -304,10 +508,166 @@
   margin: 5px 0;
 }
 
+/* Contact section */
+.contact-section {
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  gap: 30px;
+}
+
+.contact-text {
+  flex: 1;
+}
+
+.contact-social-icons {
+  opacity: 0.8;
+  padding-top: 30px;
+  font-size: 32px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-social-icons i:hover {
+  transform: scale(2);
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.contact-form {
+  display: grid;
+  margin-top: 2.55rem;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.input-wrap {
+  position: relative;
+}
+
+.input-wrap.w-100 {
+  grid-column: span 2;
+}
+
+.contact-input {
+  width: 100%;
+  background-color: hsla(var(--main-hue), 50%, 50%, 6.5%);
+  padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
+  outline: none;
+  border-radius: 30px;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: 0.3s;
+  border: 2px solid black;
+  box-shadow: 0 0 0 0px;
+}
+
+.input-wrap label {
+  position: absolute;
+  top: 50%;
+  left: calc(1.35rem + 2px);
+  transform: translateY(-50%);
+  color: grey;
+  pointer-events: none;
+  transition: 0.25s;
+}
+
+.input-wrap .icon {
+  position: absolute;
+  right: calc(1.35rem + 2px);
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+textarea.contact-input {
+  resize: none;
+  width: 100%;
+  min-height: 150px;
+}
+
+textarea.contact-input ~ label {
+  top: 1.2rem;
+  transform: none;
+}
+
+textarea.contact-input ~ .icon {
+  top: 1.3rem;
+  transform: none;
+}
+
+.forms-wraper {
+  max-width: 32rem;
+}
+
+.input-wrap.focus .contact-input {
+  background-color: white;
+  border: 2px solid;
+}
+
+.input-wrap.focus .label {
+  color: white;
+  transform: scale(1.5);
+}
+
+.input-wrap.focus .icon {
+  color: grey;
+}
+
+.input-wrap.not-empty label {
+  font-size: 0.66rem;
+  top: 0.75rem;
+  transform: translateY(0);
+}
+
+.contact-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  margin-top: 1rem;
+  width: 100%;
+  grid-column: span 2;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.1rem 2rem;
+  color: black;
+  border-radius: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+  font-family: inherit;
+}
+
+.btn:hover {
+  background-color: #89d6fb;
+}
+
+.btn.upload:hover .icon {
+  background-color: whitesmoke;
+}
+
+.btn.upload:hover {
+  background-color: whitesmoke;
+}
+
+.btn.upload span:hover {
+  color: whitesmoke !important;
+}
+
 /* footer */
 .footer {
   border-radius: 25px 25px 0 0;
-  position: relative;
   width: 100%;
   background: #61a0ff;
   height: auto;
@@ -366,6 +726,7 @@
 
 .footer p {
   color: #fff;
+  opacity: 0.75;
   margin: 5px 0 5px 0;
   font-size: 1rem;
   font-weight: 300;
