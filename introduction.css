@@ -19,7 +19,7 @@
   margin: 0 auto;
 }
 
-.image {
+.intro-image {
   text-align: left;
   position: relative;
 }
@@ -46,25 +46,13 @@
 }
 
 .intro-img {
-  width: 80%;
-  height: auto;
+  width: 90%;
+  height: 100%;
   max-height: 60vh;
   border-radius: 5%;
   position: relative;
   z-index: 1;
   transition: transform 0.3s ease-in-out;
-}
-
-.image::before {
-  width: 80%;
-  content: "";
-  position: absolute;
-  left: 3%;
-  right: 5%;
-  top: 5%;
-  bottom: -5%;
-  border: 5px solid #2192ff;
-  border-radius: 5%;
 }
 
 .image:hover img {
@@ -149,15 +137,15 @@
 /* About me section */
 .about-me {
   background-color: #c7efcf; /* Background color for the about me section */
-  min-height: 100vh;
+  height: 100vh;
   padding-top: 50px;
   border-radius: 6% 6% 0 0;
 }
 
 .about-content {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 30px;
   height: 100vh;
   padding: 40px;
 }
@@ -166,14 +154,33 @@
   font-size: 1.5rem;
 }
 
-.about-image {
-  text-align: center;
+.image-container {
+  position: relative;
+  z-index: 1;
+  margin-left: 30px;
 }
 
-.about-image img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.image-container::after {
+  position: absolute;
+  content: "";
+  left: 20px;
+  top: 20px;
+  border: 2px solid blue;
+  width: 350px;
+  height: 350px;
+  z-index: -1;
+  border-radius: 10px;
+}
+
+
+.image-container img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+}
+.image-container img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 /* Education  */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap");
@@ -201,11 +208,12 @@
 
 .education h1 {
   text-align: center;
+  font-weight: 800;
 }
 
 .education ul {
   --col-gap: 2rem;
-  --row-gap: 2rem;
+  --row-gap: 8rem;
   --line-w: 0.25rem;
   display: grid;
   grid-template-columns: var(--line-w) 1fr;
@@ -224,7 +232,6 @@
   background: rgb(225, 225, 225);
   border-radius: calc(var(--line-w) / 2);
 }
-
 
 /* row gaps */
 .education ul li:not(:last-child) {
@@ -258,21 +265,7 @@
   place-content: center;
   position: relative;
 
-  border-radius: calc(var(--dateH) / 2) 0 0 calc(var(--dateH) / 2);
-}
-
-/* date flap */
-.education ul li .date::before {
-  content: "";
-  width: var(--inlineP);
-  aspect-ratio: 1;
-  background: var(--accent-color);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2) 100%, transparent);
-  position: absolute;
-  top: 100%;
-
-  clip-path: polygon(0 0, 100% 0, 0 100%);
-  right: 0;
+  border-radius: calc(var(--dateH) / 2);
 }
 
 /* circle */
@@ -336,6 +329,11 @@ ul li .descr::before {
   bottom: 0.25rem;
 }
 
+@media (max-width: 650px) {
+  .education ul {
+    --row-gap: 2rem;
+  }
+}
 @media (min-width: 40rem) {
   .education ul {
     grid-template-columns: 1fr var(--line-w) 1fr;
@@ -355,17 +353,12 @@ ul li .descr::before {
     grid-row: 2/4;
   }
 
-  .education ul li:nth-child(odd) .date::before {
-    clip-path: polygon(0 0, 100% 0, 100% 100%);
-    left: 0;
-  }
-
   .education ul li:nth-child(odd) .date::after {
     transform: translate(-50%, -50%);
     left: calc(100% + var(--col-gap) + var(--line-w) / 2);
   }
   .education ul li:nth-child(odd) .date {
-    border-radius: 0 calc(var(--dateH) / 2) calc(var(--dateH) / 2) 0;
+    border-radius: calc(var(--dateH) / 2);
   }
 }
 
