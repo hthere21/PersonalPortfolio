@@ -21,7 +21,7 @@
   </head>
   <body>
     <header>
-      <nav class="navbar">
+      <!-- <nav class="navbar">
         <input type="checkbox" name="check" id="check" />
         <label for="check" class="checkbtn"
           >&nbsp
@@ -33,7 +33,7 @@
           <li><a href="portfolio.html">Education and Experience</a></li>
           <li><a href="contact.html">Contact Me </a></li>
         </ul>
-      </nav>
+      </nav> -->
     </header>
     <section class="first-intro">
       <div class="grid-container">
@@ -47,8 +47,10 @@
         </div>
         <div class="intro-text">
           <h3>Welcome to my personal website</h3>
+          <div class="white-line1" style="opacity: 0.6; width: 60%; height: 3px; background-color: #f1e12f; margin-left:10px;"></div>
           <h2>Hello, I am Hai</h2>
-          <h3>Software Engineer Major | UCI 24'</h3>
+
+          <h4>Software Engineer - Computer Science Major | UCI 24'</h4>
           <p>
             I'm a dedicated Software Engineer with a passion for turning
             innovative ideas into reality. This website is a reflection of my
@@ -60,12 +62,13 @@
     </section>
     <section class="about-me">
       <h1 style="padding-left: 40px; font-size: 3rem">
-        A little bit about myself
+        01. A little bit about myself
       </h1>
       <div class="about-content">
         <div class="about-text">
+          <h2>Hi again, my name is <span class="about-h2-name">Hai Nguyen</span></h2>
           <p>
-            Hi, my name is Hai Nguyen. I am currently a third-year Computer
+            I am currently a third-year Computer
             Science major at the University of California, Irvine. I'm
             passionate about technology and the endless possibilities it offers.
           </p>
@@ -77,9 +80,7 @@
           </p>
           <p>
             Explore my portfolio to see some of my projects and get to know me
-            better. Whether you're a fellow enthusiast or a potential
-            collaborator, I look forward to connecting and sharing ideas
-            together. Feel free to explore my portfolio to see some of my
+            better. Feel free to explore my portfolio to see some of my
             projects and get to know me better. Whether you're a fellow
             enthusiast or a potential collaborator, I'm eager to connect and
             share ideas.
@@ -133,21 +134,26 @@
 </div>
     </section>
     <section class="my-work">
-      <h1>&ltMy Recent Projects&gt</h1>
+      <h1 style="font-size: 36px;
+      font-family: Tahoma, Geneva, Verdana, sans-serif;
+      color: #272343;
+      text-align: center; padding-top: 50px;">&lt;My Recent Projects&gt;</h1>
+
       <div class="projects">
       <div class="project">
         <div class="project-image">
-          <img src="project1.jpg" alt="Project 1" />
+          <img src="img/Screenshot 2023-09-18 at 5.38.03 PM.png" alt="Project 1"  style="height: 350px;"/>
         </div>
         <div class="project-details">
           <h2>ITC RoomateFinder</h2>
           <p>A web app, built with Angular, assists college students in finding rental housing. Express.js handles requests, MongoDB manages data, and Socket.io adds real-time chat. This app streamlines the housing search, offering a modern solution for students.</p>
           <ul class="programming-languages">
-            <li>Angular</li>
-            <li>Express.js</li>
-            <li>MongoDB & Mongoose</li>
+            <li><img src="https://devicon-website.vercel.app/api/angularjs/original.svg"></img></li>
+            <li><img src="https://devicon-website.vercel.app/api/express/original.svg"></img></li>
+            <li><img src="https://devicon-website.vercel.app/api/bootstrap/original.svg"></img></li>
+            <li><img src="https://devicon-website.vercel.app/api/mongodb/original.svg"></img></li>
           </ul>
-          <div class="project-buttons">
+          <div class="project-buttons" style="display:flex; justify-content: right;">
             <a href="#" class="button">Code</a>
             <a href="#" class="button">Demo</a>
           </div>
@@ -156,17 +162,18 @@
 
         <div class="project project-reverse">
           <div class="project-image">
-            <img src="project1.jpg" alt="Project 1" />
+            <img src="img/Screenshot 2023-09-18 at 5.48.34 PM.png" alt="Project 1" style="height: 350px;"/>
           </div>
           <div class="project-details">
             <h2>Fablix Movies</h2>
             <p>Developed a Netflix-inspired web application, leveraging AWS EC2 hosting for secure access. Users can browse movie information from a MySQL database while benefiting from Google Recaptcha security and HTTPS encryption. The frontend communicates with a Tomcat server via Servlets, utilizing jQuery for dynamic content display</p>
             <ul class="programming-languages">
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>MySQL</li>
-              <li>Tomcat Apache</li>
+              <li><img src="https://devicon-website.vercel.app/api/html5/original.svg"></img></li>
+              <li><img src="https://devicon-website.vercel.app/api/sass/original.svg"></img></li>
+              <li><img src="https://devicon-website.vercel.app/api/javascript/original.svg"></img></li>
+              <li><img src="https://devicon-website.vercel.app/api/mysql/original.svg"></img></li>
+              <li><img src="https://devicon-website.vercel.app/api/tomcat/original.svg"></img></li>
+              <li><img src="https://devicon-website.vercel.app/api/java/original.svg"></img></li>
             </ul>
             <div class="project-buttons">
               <a href="#" class="button">Code</a>
@@ -177,17 +184,17 @@
 
         <div class="project">
           <div class="project-image">
-            <img src="project1.jpg" alt="Project 1" />
+            <img src="img/Screenshot 2023-09-18 at 5.39.22 PM.png" alt="Project 1" style="height: 350px;" />
           </div>
           <div class="project-details">
             <h2>Alternative WebApp-Interaction</h2>
             <p>Developed a responsive website enabling users to interact and rate random photos using hand gestures. The project utilizes the Handtrack.js library to recognize various hand gestures via the laptop camera. Additionally, it incorporates a REST API request to Unsplash for fetching random photos and photographer information.</p>
             <ul class="programming-languages">
-              <li>Angular</li>
-              <li>TypeScript</li>
-              <li>Restful APIs</li>
+              <li><img src="https://devicon-website.vercel.app/api/angularjs/original.svg"></img></li>
+              <li><img src="https://devicon-website.vercel.app/api/typescript/original.svg"></img></li>
+              <li><img src="https://uxwing.com/wp-content/themes/uxwing/download/web-app-development/rest-api-icon.png"></img></li>
             </ul>
-            <div class="project-buttons">
+            <div class="project-buttons" style="display:flex; justify-content: right;">
               <a href="#" class="button">Code</a>
               <a href="#" class="button">Demo</a>
             </div>

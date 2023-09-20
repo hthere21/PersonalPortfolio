@@ -1,6 +1,6 @@
 /* Default styles for larger screens */
 .first-intro {
-  padding: 90px 100px 2rem 100px;
+  padding: 90px 50px 2rem 50px;
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -10,13 +10,11 @@
 .grid-container {
   padding: 30px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 30px;
-  max-width: 1200px;
+  grid-template-columns: 1.8fr 2fr;
+  gap: 5px;
   align-items: center;
   justify-content: center;
   position: relative;
-  margin: 0 auto;
 }
 
 .intro-image {
@@ -32,32 +30,34 @@
 
 .intro-text h2,
 .intro-text h3,
+.intro-text h4,
 .intro-text p {
   margin: 10px;
 }
 
 .intro-text h2 {
-  font-size: 5rem;
+  font-size: 6rem;
   font-weight: 1000;
+  color: #6ea6f3;
 }
 
+.intro-text h3 {
+    margin-bottom: 2px;
+  color: #f1e12f;
+  font-size: 1.7rem;
+}
 .intro-text p {
-  font-size: 16px;
+  font-size: 18px;
+  color: #464c62;
+  text-decoration: double;
 }
 
 .intro-img {
   width: 90%;
-  height: 100%;
-  max-height: 60vh;
+  max-height: 70vh;
   border-radius: 5%;
   position: relative;
   z-index: 1;
-  transition: transform 0.3s ease-in-out;
-}
-
-.image:hover img {
-  transform: scale(1.1);
-  transition: 0.3s;
 }
 
 /* Responsive adjustments for ipad screens */
@@ -136,10 +136,9 @@
 
 /* About me section */
 .about-me {
-  background-color: #c7efcf; /* Background color for the about me section */
+  padding-top: 100px;
+  background-color: #e3f6f5; /* Background color for the about me section */
   height: 100vh;
-  padding-top: 50px;
-  border-radius: 6% 6% 0 0;
 }
 
 .about-content {
@@ -149,9 +148,30 @@
   height: 100vh;
   padding: 40px;
 }
+.about-me h1 {
+  color: #a4b6ca;
+}
 
-.about-text {
-  font-size: 1.5rem;
+.about-me h2 {
+  font-family: Tahoma;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #0056b3;
+  font-style: bold;
+}
+
+.about-me .about-h2-name {
+  font-family: Tahoma;
+  margin-bottom: 10px;
+  color: gold;
+  font-style: bold;
+}
+
+.about-me p {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: black;
+  opacity: 0.8;
 }
 
 .image-container {
@@ -171,7 +191,6 @@
   z-index: -1;
   border-radius: 10px;
 }
-
 
 .image-container img {
   width: 350px;
@@ -372,7 +391,7 @@ ul li .descr::before {
 
 /* My Work Section */
 .my-work {
-  background-color: white;
+  background-color: #e3f6f5;
   height: auto;
 }
 
@@ -389,17 +408,37 @@ ul li .descr::before {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 20px 20px;
+  margin-top: 20px;
+  margin-bottom: 3rem;
   text-align: left;
   width: auto;
 }
 
+.project p {
+  color: #2d334a;
+  border-radius: 20px;
+  padding: 25px;
+  background-color: #fffffe;
+  border: #2d334a solid 1px;
+}
+
 .project h2 {
+  margin-bottom: 5px;
   font-weight: 600;
   text-align: center;
+  color: #272343;
+  font-size: 2.5rem;
+  font-weight: 800;
 }
-.project-image {
+.project-image img {
   flex: 1;
+  border-radius: 20px;
+  border: #2d334a 2px solid;
+}
+
+.project-image img:hover {
+  box-shadow: 0px 3px 3px gold;
+  transition: 0.8s;
 }
 
 .project-details {
@@ -409,14 +448,19 @@ ul li .descr::before {
 }
 
 .programming-languages {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
-  display: inline;
+  margin: 10px;
+  display: flex; /* Display the list items in a row */
 }
 
 .programming-languages li {
-  display: inline;
-  margin-right: 10px;
+  margin-right: 10px; /* Adjust the spacing between images */
+}
+
+.programming-languages img {
+  width: 30px; /* Adjust the width to make them smaller */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .project-buttons {
@@ -427,20 +471,19 @@ ul li .descr::before {
   display: inline-block;
   margin-right: 10px;
   padding: 10px 20px;
-  background-color: #007bff; /* Button background color */
-  color: #fff; /* Button text color */
+  background-color: #ffc107; /* Button background color */
+  color: #fffffe; /* Button text color */
   text-decoration: none;
   border-radius: 5px;
 }
 
 /* Style the buttons as needed */
 .button:hover {
-  background-color: #0056b3; /* Hover background color */
+  background-color: #0056b3;
 }
 
 .project-reverse {
   flex-direction: row-reverse;
-  /* Swap image and text positions for every other project */
 }
 
 @media (max-width: 768px) {
@@ -484,6 +527,16 @@ ul li .descr::before {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   text-align: center;
+  transition: transform 0.5s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.programming-language-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 8px rgba(17, 17, 160, 0.5);
+}
+
+.programming-language-card:hover {
+  transform: translateX(2);
 }
 
 .skill-title {

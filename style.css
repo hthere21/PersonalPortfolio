@@ -9,11 +9,12 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f5f2e8;
+  /* background-color: #fffbf4; */
+  background-color: #F5F9FF;
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   width: calc(100% - 10px);
   margin: 5px 5px 10px 5px;
   margin-left: 5px;
