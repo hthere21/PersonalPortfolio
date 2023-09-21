@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hai's Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="animation.css" />
     <link rel="stylesheet" href="introduction.css" />
     <script
       src="https://kit.fontawesome.com/b46a93180b.js"
       crossorigin="anonymous"
     ></script>
-
+    <script defer src="app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,6 +36,7 @@
         </ul>
       </nav> -->
     </header>
+    <div class="container-body" id="blur">
     <section class="first-intro">
       <div class="grid-container">
         <div class="intro-image">
@@ -48,7 +50,7 @@
         <div class="intro-text">
           <h3>Welcome to my personal website</h3>
           <div class="white-line1" style="opacity: 0.6; width: 60%; height: 3px; background-color: #f1e12f; margin-left:10px;"></div>
-          <h2>Hello, I am Hai</h2>
+          <h2><span class="hello-text">H</span><span class="hello-text">e</span><span class="hello-text">l</span><span class="hello-text">l</span><span class="hello-text">o</span>, I am <span class="hello-text">H</span><span class="hello-text">a</span><span class="hello-text">i</span></h2>
 
           <h4>Software Engineer - Computer Science Major | UCI 24'</h4>
           <p>
@@ -56,12 +58,14 @@
             innovative ideas into reality. This website is a reflection of my
             work and interests.
           </p>
-          <button>Explore more</button>
+          <a href="#about-me" style="transition: 0.5s;"><div class="scroll-down-button"><div class="scroll-down-text">Explore more </div><div class="scroll-down-icon"></div></div></a>
         </div>
       </div>
     </section>
-    <section class="about-me">
-      <h1 style="padding-left: 40px; font-size: 3rem">
+
+    <section class="about-me" id="about-me">
+      <div class="hidden">
+      <h1 style="padding-left: 40px; font-size: 3rem;">
         01. A little bit about myself
       </h1>
       <div class="about-content">
@@ -96,36 +100,35 @@
     
 
     <section class="education">
+      <h1 style="color: #6EA6F3; font-size: 3rem">My education journey</h1>
       <div class="education-section" style="padding: 30px">
-      <h1>My education journey</h1>
 <ul>
-    <li style="--accent-color:#41516C">
+    <li class="hidden-left" style="--accent-color:#41516C">
       <div class="date">August 2019</div>
       <div class="title">Orange Coast College, Costa Mesa, CA</div>
       <div class="descr">My journey began at a small community college, where I find coding is interesting.</div>
-      
     </li>
-    <li style="--accent-color:#FBCA3E">
+    <li class="hidden-right" style="--accent-color:#FBCA3E">
         <div class="date">2021</div>
         <div class="title">OCC Honors Program</div>
         <div class="descr">I joined the Honors Program, where I had the privilege of engaging in challenging coursework, collaborating with fellow high-achieving students, and delving deeper into my academic pursuits.</div>
     </li>
-    <li style="--accent-color:#E24A68">
+    <li class="hidden-left" style="--accent-color:#E24A68">
         <div class="date">May 2022</div>
         <div class="title">Associate of Science in Computer Science</div>
         <div class="descr">Having earned my Associate of Science in Computer Science, I am now equipped with a strong foundation in the field and decide to transfer to another university to pursue my Bachelor's degree in the same field.</div>
     </li>
-    <li style="--accent-color:#1B5F8C">
+    <li class="hidden-right" style="--accent-color:#1B5F8C">
         <div class="date"> July 2022</div>
         <div class="title">Software Engineer Intern at FPT Software</div>
         <div class="descr">After 2 years of pandemic lockdown, I decided to visit my family and secured an internship at FPT Software one of the biggest tech company in Vietnam.</div>
     </li>
-    <li style="--accent-color:#4CADAD">
+    <li class="hidden-left" style="--accent-color:#4CADAD">
         <div class="date">2022 - Present</div>
         <div class="title">Bachelor of Science in Computer Science</div>
         <div class="descr">After dozens of applications, I have taken the leap to transfer to the University of California, Irvine with the Honors Program.</div>
     </li>
-    <li style="--accent-color:#4CADAD">
+    <li class="hidden-right" style="--accent-color:#4CADAD">
       <div class="date">April 2023</div>
       <div class="title">1st place in MISSA ITC Pomona Hackerthon</div>
       <div class="descr">I achieved first place in a web app design competition with my roommate-finding web application</div>
@@ -133,14 +136,15 @@
 </ul>
 </div>
     </section>
-    <section class="my-work">
-      <h1 style="font-size: 36px;
-      font-family: Tahoma, Geneva, Verdana, sans-serif;
-      color: #272343;
-      text-align: center; padding-top: 50px;">&lt;My Recent Projects&gt;</h1>
 
-      <div class="projects">
-      <div class="project">
+
+    <section class="my-work">
+      <h1 style="font-size: 3rem;
+      font-family: Tahoma, Geneva, Verdana, sans-serif;
+      color: #0099FA;
+      text-align: center; padding-top: 50px;">My Recent Projects..</h1>
+      <div class="projects" >
+      <div class="project fade">
         <div class="project-image">
           <img src="img/Screenshot 2023-09-18 at 5.38.03 PM.png" alt="Project 1"  style="height: 350px;"/>
         </div>
@@ -160,7 +164,7 @@
         </div>
       </div>
 
-        <div class="project project-reverse">
+        <div class="project project-reverse fade">
           <div class="project-image">
             <img src="img/Screenshot 2023-09-18 at 5.48.34 PM.png" alt="Project 1" style="height: 350px;"/>
           </div>
@@ -182,7 +186,7 @@
           </div>
         </div>
 
-        <div class="project">
+        <div class="project fade">
           <div class="project-image">
             <img src="img/Screenshot 2023-09-18 at 5.39.22 PM.png" alt="Project 1" style="height: 350px;" />
           </div>
@@ -201,11 +205,15 @@
           </div>
         </div>
       </div>
-        <button style="align-items: center">Explore more projects</button>
+      <div class="center-container">
+        <button class="center-button"><i class="fa fa-github"></i> Explore more</button>
       </div>
+      
+
     </section>
     <section class="skill">
-      <h1>Crafting workshop</h1>
+      <div class="inner-skill">
+      <h1 style="text-align: center; color: #6EA6F3; font-size: 3rem;">Crafting workshop</h1>
       <div class="technical-skill">
         <img src="yolo.jpg" />
         <div
@@ -224,9 +232,10 @@
           </p>
         </div>
       </div>
-      <h1>My Technical Skills</h1>
+      <h1 style="text-align: center; color: #6EA6F3; font-size: 3rem; margin-bottom: 20px;">My Technical Skills</h1>
       <div class="skill-section">
-        <div class="programming-language-card">
+
+        <div class="programming-language-card hidden">
           <h2 class="skill-title">Front End</h2>
           <div class="programming-language-list">
             <div class="programming-language-item">HTML</div>
@@ -241,7 +250,7 @@
             <div class="programming-language-item">Flutter</div>
           </div>
         </div>
-        <div class="programming-language-card">
+        <div class="programming-language-card hidden">
           <h2 class="skill-title">Back End</h2>
           <div class="programming-language-list">
             <div class="programming-language-item">Spring</div>
@@ -257,7 +266,7 @@
           </div>
         </div>
 
-        <div class="programming-language-card">
+        <div class="programming-language-card hidden">
           <h2 class="skill-title">Others</h2>
           <div class="programming-language-list">
             <div class="programming-language-item">C++</div>
@@ -275,13 +284,16 @@
           </div>
         </div>
       </div>
+    </div>
     </section>
+
+
       <section class="contact-section">
         <div class="contact-text">
           <h2 style="font-weight: 1000; font-size:3rem;">Let's connect</h2>
-          <div class="divider" style="background-color: black;"></div>
-          <div class="container">
-            <form class="contact-form">
+          <div class="divider" style="background-color: black; width: 100%;"></div>
+          <div class="container fade">
+            <form class="contact-form" name="contact-form">
               <div class="input-wrap">
               <label for="fname">First Name</label><i class="icon fa-solid fa-image-portrait"></i>
               <input type="text" class="contact-input" id="fname" name="firstname" auto-complete="off" required>
@@ -294,18 +306,19 @@
 
               <div class="input-wrap w-100">
               <label for="email">Email</label><i class="icon fa-solid fa-envelope"></i>
-              <input type="email" class="contact-input" id="email" auto-complete="off" name="Email" required>
+              <input type="email" class="contact-input" id="email" name="email" auto-complete="off" required>
               </div>
 
               <div class="input-wrap w-100">
-              <textarea class="contact-input" name="Message" auto-complete="off" required></textarea> 
+              <textarea class="contact-input" name="message" auto-complete="off" required></textarea> 
               <label for="subject">Message</label><i class="icon fa-solid fa-message"></i>
               </div>
-            
+              <div class="send-button-section">
+                  <button type="submit" class="send-button">Send message</button>
+                </div>
+              </form>
           </div>
-          <p><a href="contact.html" class="button" >Send me a message</a></p>
-
-
+          <button onclick="toggle()">Close</button>
         </div>
         <div class="contact-social-icons" >
           <a href="#"><i class="fab fa-linkedin"style="color:black"></i></a>
@@ -327,6 +340,14 @@
       <p>Created by @HaiNg-2023 &copy;</p>
     </footer>
     </section>
-    <script src="app.js"></script>
+  </div>
+  <div id="popup" class="modal">
+    <div class="modal-content">
+      <h2>Message sent successfully</h2>
+      <p>Thank you for visiting my website. I have received your message and I will contact you back soon.</p>
+      <button onclick="toggle()" class="close-button">Close</button>
+    </div>
+  </div>
+  
   </body>
 </html>

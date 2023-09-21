@@ -1,0 +1,32 @@
+.fade {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(10px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+/* Initially hidden to the left */
+.hidden-left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+/* Initially hidden to the right */
+.hidden-right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: opacity 0.5s ease, transform 0.8s ease;
+}
+
+/* When revealed, transition to visible position */
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}

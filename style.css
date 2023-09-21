@@ -5,12 +5,15 @@
   list-style: none;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
+
+
 
 body {
   font-family: "Roboto", sans-serif;
   /* background-color: #fffbf4; */
-  background-color: #F5F9FF;
+  background-color: #f5f9ff;
 }
 
 nav {
