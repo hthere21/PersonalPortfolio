@@ -8,12 +8,13 @@
   scroll-behavior: smooth;
 }
 
-
-
 body {
   font-family: "Roboto", sans-serif;
   /* background-color: #fffbf4; */
   background-color: #f5f9ff;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 nav {
