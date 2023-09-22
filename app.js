@@ -1,3 +1,24 @@
+//Navbar
+  // Function to close the navbar when a menu item is clicked
+  function closeNavbar() {
+    // Get the checkbox element
+    const checkbox = document.getElementById("check");
+
+    // Uncheck the checkbox to close the navbar
+    checkbox.checked = false;
+  }
+
+  // Add click event listeners to the menu items
+  document.addEventListener("DOMContentLoaded", function () {
+    const menuItems = document.querySelectorAll(".navbar ul li a");
+
+    menuItems.forEach(function (item) {
+      item.addEventListener("click", closeNavbar);
+    });
+  });
+
+
+
 const inputs = document.querySelectorAll(".contact-input");
 
 inputs.forEach((input)=> {

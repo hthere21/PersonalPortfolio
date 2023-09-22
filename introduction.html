@@ -22,7 +22,7 @@
   </head>
   <body>
     <header>
-      <!-- <nav class="navbar">
+      <nav class="navbar">
         <input type="checkbox" name="check" id="check" />
         <label for="check" class="checkbtn"
           >&nbsp
@@ -30,11 +30,17 @@
         </label>
         <label class="logo" id="portfolioLabel">MyPortfolio</label>
         <ul>
-          <li><a href="introduction.html">About Me</a></li>
-          <li><a href="portfolio.html">Education and Experience</a></li>
-          <li><a href="contact.html">Contact Me </a></li>
+          <li><a href="#section2">About Me</a></li>
+          <li>
+            <a href="#section3" style="transition: 0.5s"
+              >Education and Experience</a
+            >
+          </li>
+          <li><a href="#section4" style="transition: 0.5s">Projects</a></li>
+          <li><a href="#section5" style="transition: 0.5s">Skills</a></li>
+          <li><a href="#section6" style="transition: 0.5s">Contact Me </a></li>
         </ul>
-      </nav> -->
+      </nav>
     </header>
     <div class="container-body" id="blur">
       <section class="first-intro" id="section1">
@@ -47,37 +53,42 @@
               style="mix-blend-mode: multiply"
             />
           </div>
-          <div class="intro-text">
-            <h3>Welcome to my personal website</h3>
-            <div
-              class="white-line1"
-              style="
-                opacity: 0.6;
-                width: 60%;
-                height: 3px;
-                background-color: #f1e12f;
-                margin-left: 10px;
-              "
-            ></div>
-            <h2>
-              <span class="hello-text">H</span><span class="hello-text">e</span
-              ><span class="hello-text">l</span><span class="hello-text">l</span
-              ><span class="hello-text">o</span>, I am
-              <span class="hello-text">H</span><span class="hello-text">a</span
-              ><span class="hello-text">i</span>
-            </h2>
+          <div>
+            <div class="intro-text">
+              <h3>Welcome to my personal website</h3>
+              <div
+                class="white-line1"
+                style="
+                  opacity: 0.6;
+                  min-width: 60%;
+                  height: 3px;
+                  background-color: #f1e12f;
+                  margin-left: 10px;
+                "
+              ></div>
+              <h2>
+                <span class="hello-text">H</span
+                ><span class="hello-text">e</span
+                ><span class="hello-text">l</span
+                ><span class="hello-text">l</span
+                ><span class="hello-text">o</span>, I am
+                <span class="hello-text">H</span
+                ><span class="hello-text">a</span
+                ><span class="hello-text">i</span>
+              </h2>
 
-            <h4>Software Engineer - Computer Science Major | UCI 24'</h4>
-            <p>
-              I'm a dedicated Software Engineer with a passion for turning
-              innovative ideas into reality. This website is a reflection of my
-              work and interests.
-            </p>
-            <a href="#section2" style="transition: 0.5s"
-              ><div class="scroll-down-button">
-                <div class="scroll-down-text">Explore more</div>
-                <div class="scroll-down-icon"></div></div
-            ></a>
+              <h4>Software Engineer - Computer Science Major | UCI 24'</h4>
+              <p>
+                I'm a dedicated Software Engineer with a passion for turning
+                innovative ideas into reality. This website is a reflection of
+                my work and interests.
+              </p>
+              <a href="#section2" style="transition: 0.5s"
+                ><div class="scroll-down-button">
+                  <div class="scroll-down-text">Explore more</div>
+                  <div class="scroll-down-icon"></div></div
+              ></a>
+            </div>
           </div>
         </div>
       </section>
@@ -100,9 +111,10 @@
               </p>
               <p>
                 I believe in the power of innovation and collaboration to drive
-                change. When I'm not coding, you'll find me traveling and
-                playing video games, which provide a creative balance to my
-                technical pursuits.
+                change. When I'm not coding, you'll find me traveling
+                <i class="fa-solid fa-plane"></i> and playing video games
+                <i class="fa-solid fa-computer"></i>, which provide a creative
+                balance to my technical pursuits.
               </p>
               <p>
                 Explore my portfolio to see some of my projects and get to know
@@ -115,8 +127,8 @@
             <div class="image-container">
               <img
                 class="about-img"
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2864&q=80"
-                alt="Your Image"
+                src="img/me and my sis.jpg"
+                alt="Me and my sister"
               />
             </div>
           </div>
@@ -135,7 +147,7 @@
                 coding is interesting.
               </div>
             </li>
-            <li class="hidden-right" style="--accent-color: #fbca3e">
+            <li class="hidden-right" style="--accent-color: #ffa500">
               <div class="date">2021</div>
               <div class="title">OCC Honors Program</div>
               <div class="descr">
@@ -172,7 +184,7 @@
                 to the University of California, Irvine with the Honors Program.
               </div>
             </li>
-            <li class="hidden-right" style="--accent-color: #4cadad">
+            <li class="hidden-right" style="--accent-color: #fbca3e">
               <div class="date">April 2023</div>
               <div class="title">1st place in MISSA ITC Pomona Hackerthon</div>
               <div class="descr">
@@ -202,7 +214,6 @@
               <img
                 src="img/Screenshot 2023-09-18 at 5.38.03 PM.png"
                 alt="Project 1"
-                style="height: 350px"
               />
             </div>
             <div class="project-details">
@@ -215,6 +226,9 @@
                 students.
               </p>
               <ul class="programming-languages">
+                <h3 style="margin-right: 10px; color: #0099fa">
+                  Technology used:
+                </h3>
                 <li>
                   <img
                     src="https://devicon-website.vercel.app/api/angularjs/original.svg"
@@ -240,20 +254,35 @@
                 class="project-buttons"
                 style="display: flex; justify-content: right"
               >
-                <a href="#" class="button">Code</a>
-                <a href="#" class="button">Demo</a>
+                <a
+                  href="https://github.com/hthere21/ITC-23"
+                  class="button"
+                  target="_blank"
+                  >Code <i class="fa-solid fa-code"></i
+                ></a>
+                <a
+                  href="https://docs.google.com/presentation/d/1HVDswA78s8Ola_1XhF0ZFHWx-1TorueZ091eMcOyPUk/edit?usp=sharing"
+                  class="button"
+                  target="_blank"
+                  >Demo <i class="fa-solid fa-video"></i
+                ></a>
               </div>
             </div>
           </div>
 
-          <div class="project project-reverse fade">
-            <div class="project-image">
-              <img
-                src="img/Screenshot 2023-09-18 at 5.48.34 PM.png"
-                alt="Project 1"
-                style="height: 350px"
-              />
-            </div>
+          <div
+            class="divider hidden-right"
+            style="
+              width: 98%;
+              height: 1px;
+              background-color: #000;
+              margin: 50px auto;
+              opacity: 0.8;
+              transition: 1.2s;
+            "
+          ></div>
+
+          <div class="project fade">
             <div class="project-details">
               <h2>Fablix Movies</h2>
               <p>
@@ -265,6 +294,9 @@
                 display
               </p>
               <ul class="programming-languages">
+                <h3 style="margin-right: 10px; color: #0099fa">
+                  Technology used:
+                </h3>
                 <li>
                   <img
                     src="https://devicon-website.vercel.app/api/html5/original.svg"
@@ -297,18 +329,41 @@
                 </li>
               </ul>
               <div class="project-buttons">
-                <a href="#" class="button">Code</a>
-                <a href="#" class="button">Demo</a>
+                <!-- <a href="#" class="button"
+                  >Code <i class="fa-solid fa-code"></i
+                ></a> -->
+                <a
+                  href="https://youtube.com/playlist?list=PLf07ZzwQou1Wxwo2WaJo8E3epoLKsv4FH&si=RDrkCDFRNo-Y0NKD"
+                  class="button"
+                  >Demo <i class="fa-solid fa-video"></i
+                ></a>
               </div>
             </div>
+            <div class="project-image">
+              <img
+                src="img/Screenshot 2023-09-18 at 5.48.34 PM.png"
+                alt="Fablix Movie Project"
+              />
+            </div>
           </div>
+
+          <div
+            class="divider hidden-left"
+            style="
+              width: 98%;
+              height: 1px;
+              background-color: #000;
+              margin: 50px auto;
+              opacity: 0.8;
+              transition: 1.2s;
+            "
+          ></div>
 
           <div class="project fade">
             <div class="project-image">
               <img
                 src="img/Screenshot 2023-09-18 at 5.39.22 PM.png"
-                alt="Project 1"
-                style="height: 350px"
+                alt="Alternative-Interaction WebApp"
               />
             </div>
             <div class="project-details">
@@ -322,6 +377,9 @@
                 information.
               </p>
               <ul class="programming-languages">
+                <h3 style="margin-right: 10px; color: #0099fa">
+                  Technology used:
+                </h3>
                 <li>
                   <img
                     src="https://devicon-website.vercel.app/api/angularjs/original.svg"
@@ -342,25 +400,43 @@
                 class="project-buttons"
                 style="display: flex; justify-content: right"
               >
-                <a href="#" class="button">Code</a>
-                <a href="#" class="button">Demo</a>
+                <a
+                  href="https://github.com/hthere21/AlternativeWebApp"
+                  class="button"
+                  target="_blank"
+                  >Code <i class="fa-solid fa-code"></i
+                ></a>
+                <a
+                  href="https://youtu.be/5fVAZfXnORM"
+                  class="button"
+                  target="_blank"
+                  >Demo <i class="fa-solid fa-video"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
         <div class="center-container">
           <button class="center-button">
-            <i class="fa fa-github"></i> Explore more
+            <a
+              href="https://github.com/hthere21"
+              target="_blank"
+              style="color: beige"
+              ><i class="fa fa-github"></i> Explore more</a
+            >
           </button>
         </div>
       </section>
       <section class="skill" id="section5">
         <div class="inner-skill">
           <h1 style="text-align: center; color: #6ea6f3; font-size: 3rem">
-            Crafting workshop
+            Crafting workshop <i class="fa-solid fa-screwdriver-wrench"></i>
           </h1>
           <div class="technical-skill">
-            <img src="yolo.jpg" />
+            <img
+              class="technical-skill-image"
+              src="img/PXL_20230921_202829223.jpg"
+            />
             <div
               class="building-computer"
               style="
@@ -389,11 +465,14 @@
               margin-bottom: 20px;
             "
           >
-            My Technical Skills
+            <i class="fa-solid fa-terminal"></i> My Technical Skills
           </h1>
           <div class="skill-section">
             <div class="programming-language-card hidden">
-              <h2 class="skill-title">Front End</h2>
+              <div class="skill-title">
+                <i class="fa-solid fa-laptop" style="margin-bottom: 5px"></i>
+                <h2>Front End</h2>
+              </div>
               <div class="programming-language-list">
                 <div class="programming-language-item">HTML</div>
                 <div class="programming-language-item">CSS</div>
@@ -408,7 +487,10 @@
               </div>
             </div>
             <div class="programming-language-card hidden">
-              <h2 class="skill-title">Back End</h2>
+              <div class="skill-title">
+                <i class="fa-solid fa-server" style="margin-bottom: 5px"></i>
+                <h2>Back End</h2>
+              </div>
               <div class="programming-language-list">
                 <div class="programming-language-item">Spring</div>
                 <div class="programming-language-item">Node.js</div>
@@ -424,7 +506,13 @@
             </div>
 
             <div class="programming-language-card hidden">
-              <h2 class="skill-title">Others</h2>
+              <div class="skill-title">
+                <i
+                  class="fa-solid fa-network-wired"
+                  style="margin-bottom: 5px"
+                ></i>
+                <h2>Others</h2>
+              </div>
               <div class="programming-language-list">
                 <div class="programming-language-item">C++</div>
                 <div class="programming-language-item">Java</div>
@@ -493,6 +581,7 @@
                   required
                 />
               </div>
+              <div></div>
 
               <div class="input-wrap w-100">
                 <textarea
@@ -504,18 +593,34 @@
                 <label for="subject">Message</label
                 ><i class="icon fa-solid fa-message"></i>
               </div>
-              <div class="send-button-section">
+              <div class="empty-box"></div>
+              <div
+                class="send-button-section"
+                style="display: flex; justify-content: flex-end"
+              >
                 <button type="submit" class="send-button">Send message</button>
               </div>
             </form>
           </div>
-          <button onclick="toggle()">Close</button>
         </div>
+
         <div class="contact-social-icons">
-          <a href="#"><i class="fab fa-linkedin"></i></a>
-          <a href="#"><i class="fab fa-instagram"></i></a>
-          <a href="#"><i class="fab fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a
+            href="https://www.linkedin.com/in/hai-nguyen-03b0761bb/"
+            target="_blank"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/h.nguyen215/" target="_blank"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a
+            href="https://www.youtube.com/channel/UCqvVjMHFH501HfVhKtcasYQ"
+            target="_blank"
+            ><i class="fa-brands fa-youtube"></i
+          ></a>
+          <a href="https://github.com/hthere21" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
         </div>
       </section>
 
@@ -523,12 +628,14 @@
         <footer class="footer">
           <ul class="menu" style="padding-top: 20px">
             <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
-            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Education & Experience</a>
+              <a class="menu__link" href="#section2">About</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">Contact Me</a>
+              <a class="menu__link" href="#section3">Education & Experience</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#section4">Projects</a>
             </li>
           </ul>
           <div class="divider"></div>
