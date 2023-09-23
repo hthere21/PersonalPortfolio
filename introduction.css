@@ -800,16 +800,15 @@ textarea.contact-input ~ .icon {
 /* footer */
 .footer {
   background-color: #f5f9ff;
-  height: 180px;
+  height: 100px;
   width: 100%;
   border-radius: 10px 10px 0 0;
   border: #2d334a 0.5px solid;
-  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  top: calc(100vh - 180px);
+  top: calc(100vh - 100px);
 }
 
 .menu {
