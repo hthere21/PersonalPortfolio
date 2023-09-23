@@ -35,15 +35,11 @@ inputs.forEach((input)=> {
 })
 
 
-//Logo clicking
-// document.getElementById("portfolioLabel").addEventListener("click", function() {
-//     // Navigate to the "introduction.html" page
-//     window.location.href = "introduction.html";})
+
 
 
 
 //Scroll to reveal
-// JavaScript to reveal the hidden items
 const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -82,15 +78,13 @@ function toggle() {
     var popup = document.getElementById('popup');
   
     if (popup.classList.contains('active')) {
-      // If popup is active, remove 'active' class and overflow: hidden
       popup.classList.remove('active');
       blur.classList.remove('active');
-      document.body.style.overflow = ''; // Remove overflow: hidden
+      document.body.style.overflow = ''; 
     } else {
-      // If popup is not active, add 'active' class and overflow: hidden
       popup.classList.add('active');
       blur.classList.add('active');
-      document.body.style.overflow = 'hidden'; // Add overflow: hidden
+      document.body.style.overflow = 'hidden'; 
     }
   }
   
@@ -99,11 +93,7 @@ function toggle() {
 
 // Get all sections to spy on
 const sections = document.querySelectorAll("section");
-
-// Get the scroll spy indicator dots
 const dots = document.querySelectorAll(".dot");
-
-// Initialize a variable to keep track of the active section
 let activeSection = null;
 
 // Function to update the scroll spy indicator
@@ -113,20 +103,14 @@ function updateScrollSpy() {
 
         const rect = section.getBoundingClientRect();
         if (rect.top <= 100 && rect.bottom >= 100) {
-            // Only update if the active section has changed
             if (activeSection !== section) {
-                // Remove "active" class from all dots
                 dots.forEach((dot) => {
                     dot.classList.remove("active");
                 });
-
-                // Add "active" class to the corresponding dot
                 dots[index].classList.add("active");
 
-                // Update the active section
                 activeSection = section;
 
-                // Log the section information
                 console.log("Currently at section:", section.id);
             }
         }
@@ -134,13 +118,8 @@ function updateScrollSpy() {
 }
 
 
-// Attach a scroll event listener
 window.addEventListener("scroll", updateScrollSpy);
-
-// Initial call to set the initial state
 updateScrollSpy();
-
-// Add click event listeners to dots for scrolling
 dots.forEach((dot) => {
     dot.addEventListener("click", () => {
         const sectionId = dot.getAttribute("data-section");
