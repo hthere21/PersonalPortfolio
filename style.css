@@ -173,7 +173,6 @@ nav {
   .navbar ul li a:hover {
     transform: scale(2);
     opacity: 1;
-    filter: blur(0);
     text-decoration: none;
     color: gold;
     font-size: 1rem;
