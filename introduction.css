@@ -1,3 +1,7 @@
+.container-body {
+  position: relative;
+}
+
 .first-intro {
   padding: 90px 50px 2rem 50px;
   min-height: 100vh;
@@ -807,7 +811,7 @@ textarea.contact-input ~ .icon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: static;
+  position: absolute;
 }
 
 .menu {
