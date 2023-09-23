@@ -1,6 +1,5 @@
-.container-body {
-  position: relative;
-}
+
+
 .first-intro {
   padding: 90px 50px 2rem 50px;
   min-height: 100vh;
@@ -801,7 +800,7 @@ textarea.contact-input ~ .icon {
 /* footer */
 .footer {
   background-color: #f5f9ff;
-  height: 30vh;
+  height: 180px;
   width: 100%;
   border-radius: 10px 10px 0 0;
   border: #2d334a 0.5px solid;
@@ -810,8 +809,7 @@ textarea.contact-input ~ .icon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
+  top: calc(100vh - 180px);
 }
 
 .menu {
