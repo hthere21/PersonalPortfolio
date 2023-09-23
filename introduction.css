@@ -807,6 +807,7 @@ textarea.contact-input ~ .icon {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  position: fixed;
 }
 
 .menu {
