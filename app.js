@@ -129,3 +129,19 @@ dots.forEach((dot) => {
         }
     });
 });
+
+// JavaScript code to adjust the footer position when the keyboard pops up
+const inputFields = document.querySelectorAll('input, textarea');
+
+inputFields.forEach((inputField) => {
+  inputField.addEventListener('focus', () => {
+    const footer = document.querySelector('.footer');
+    footer.classList.remove('fixed-footer');
+  });
+
+  inputField.addEventListener('blur', () => {
+    const footer = document.querySelector('.footer');
+    footer.classList.add('fixed-footer');
+  });
+});
+
