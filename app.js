@@ -130,18 +130,22 @@ dots.forEach((dot) => {
     });
 });
 
-// JavaScript code to adjust the footer position when the keyboard pops up
-const inputFields = document.querySelectorAll('input, textarea');
 
-inputFields.forEach((inputField) => {
-  inputField.addEventListener('focus', () => {
-    const footer = document.querySelector('.footer');
-    footer.classList.remove('fixed-footer');
-  });
 
-  inputField.addEventListener('blur', () => {
-    const footer = document.querySelector('.footer');
-    footer.classList.add('fixed-footer');
-  });
+// Get a reference to the input element(s) that trigger the keyboard
+const inputElement = document.getElementById('section6');
+
+// Get a reference to the footer element
+const footer = document.querySelector('.footer');
+
+// Listen for the focus event on the input element
+inputElement.addEventListener('focus', () => {
+  // Adjust the layout when the keyboard opens
+  footer.style.marginBottom = '300px'; // Adjust this value as needed
 });
 
+// Listen for the blur event on the input element
+inputElement.addEventListener('blur', () => {
+  // Reset the layout when the keyboard closes
+  footer.style.marginBottom = '0';
+});
