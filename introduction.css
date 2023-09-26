@@ -185,6 +185,27 @@
   opacity: 0.8;
 }
 
+.resume-button {
+  margin: 50px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.resume-button a {
+  font-size: 20px;
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.resume-button a:hover {
+  background-color: #6ea6f3;
+}
+
 .image-container {
   position: relative;
   z-index: 1;
