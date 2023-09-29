@@ -818,6 +818,10 @@ textarea.contact-input ~ .icon {
   background-color: #4f8dff;
 }
 
+.loader {
+  pointer-events: none;
+}
+
 /* footer */
 .footer {
   background-color: #f5f9ff;
