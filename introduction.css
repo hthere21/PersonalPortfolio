@@ -819,16 +819,23 @@ textarea.contact-input ~ .icon {
 }
 
 /* .loader {
-  color: #333;
   pointer-events: none;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 3px solid transparent;
+  border: 3px solid white;
   border-top-color: #61a0ff;
   animation: an1 1s ease infinite;
-} */
+}
 
+@keyframes an1 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+} */
 /* footer */
 .footer {
   background-color: #f5f9ff;
