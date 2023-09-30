@@ -715,7 +715,8 @@ ul li .descr::before {
 
 .contact-input {
   width: 100%;
-  background-color: hsla(var(--main-hue), 50%, 50%, 6.5%);
+  /* background-color: hsla(var(--main-hue), 50%, 50%, 6.5%); */
+  background-color: white;
   padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
   outline: none;
   border-radius: 30px;
@@ -843,7 +844,7 @@ textarea.contact-input ~ .icon {
   height: 100px;
   width: 100%;
   border-radius: 10px 10px 0 0;
-  border: #2d334a 0.5px solid;
+  border: #6ea6f3 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -885,7 +886,7 @@ textarea.contact-input ~ .icon {
 
 .divider {
   height: 1px;
-  background-color: black;
+  background-color: #6ea6f3;
   width: 90%;
   margin: 10px 0;
 }
@@ -1105,7 +1106,6 @@ textarea.contact-input ~ .icon {
   }
   .intro-text h3 {
     font-size: 24px;
-
   }
   .intro-text p {
     text-align: center;
@@ -1176,5 +1176,4 @@ textarea.contact-input ~ .icon {
   .contact-social-icons i {
     margin: 0 10px;
   }
-
 }
