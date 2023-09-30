@@ -1120,6 +1120,9 @@ textarea.contact-input ~ .icon {
   .intro-text h3 {
     font-size: 24px;
   }
+  .intro-text h4 {
+    font-size: 15px;
+  }
   .intro-text p {
     text-align: center;
     font-size: 16px;
