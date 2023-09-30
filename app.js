@@ -56,17 +56,15 @@ const form = document.forms["contact-form"];
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  // send_btn.onclick = function() {
-  // this.
+
   send_btn.innerHTML = "<div class ='loader'></div>";
   fetch(scriptURL, { method: "POST", body: new FormData(form) })
     .then((response) => {
       toggle();
       form.reset();
-      send_btn.innerHTML = "Send";
+      send_btn.innerHTML = "Send message";
     })
     .catch((error) => console.error("Error!", error.message));
-  // }
 });
 
 // Popup
