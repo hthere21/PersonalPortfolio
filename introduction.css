@@ -818,7 +818,7 @@ textarea.contact-input ~ .icon {
   background-color: #4f8dff;
 }
 
-/* .loader {
+.loader {
   pointer-events: none;
   width: 30px;
   height: 30px;
@@ -830,12 +830,12 @@ textarea.contact-input ~ .icon {
 
 @keyframes an1 {
   0% {
-    transform: rotate(0);
+    transform: rotate(0turn);
   }
   100% {
     transform: rotate(1turn);
   }
-} */
+}
 
 /* footer */
 .footer {
@@ -1075,10 +1075,8 @@ textarea.contact-input ~ .icon {
   }
 
   /* <-----------------Education-----------------> */
-
-  /* <-----------------Work-----------------> */
-
-  /* <-----------------Skills-----------------> */
+  /* <-----------------Work----------------------> */
+  /* <-----------------Skills--------------------> */
   .skill-section {
     gap: 20px;
   }
@@ -1141,7 +1139,6 @@ textarea.contact-input ~ .icon {
   .image-container img {
     width: 100%;
   }
-  /* <-----------------Education-----------------> */
 
   /* <-----------------Work-----------------> */
   .projects {
