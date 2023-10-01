@@ -683,7 +683,7 @@ ul li .descr::before {
   background-color: #f5f9ff;
 }
 
-.contact-text h2{
+.contact-text h2 {
   font-weight: 1000;
   font-size: 3rem;
 }
@@ -1232,6 +1232,7 @@ textarea.contact-input ~ .icon {
     grid-template-columns: 1fr;
     gap: 0;
     height: auto;
+    padding: 15px;
   }
 
   .contact-social-icons {
@@ -1248,7 +1249,7 @@ textarea.contact-input ~ .icon {
     height: 5px;
     background-color: #333;
     border-radius: 50%;
-    margin: 5px 2px 5px 5px;
+    margin: 5px 1px 5px 5px;
     cursor: pointer;
     transition: transform 0.3s;
     opacity: 0.6;
