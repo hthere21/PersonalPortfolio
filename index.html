@@ -530,7 +530,7 @@
 
       <section class="contact-section" id="section6">
         <div class="contact-text">
-          <h2 style="font-weight: 1000; font-size: 3rem; color: #6ea6f3">
+          <h2 style="color: #6ea6f3">
             <i class="fa-solid fa-earth-americas"></i> Let's connect:
           </h2>
           <div
@@ -598,6 +598,8 @@
                 <!-- <div class="loader"></div> -->
               </div>
             </form>
+            <button onclick="toggle_error()">Error Testing</button>
+            <button onclick="toggle()">Testing</button>
           </div>
         </div>
 
@@ -623,7 +625,7 @@
 
       <section>
         <div class="footer">
-          <ul class="menu" style="padding-top: 20px">
+          <ul class="menu" style="margin-top: 20px">
             <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
             <li class="menu__item">
               <a class="menu__link" href="#section2">About</a>
@@ -642,7 +644,7 @@
     </div>
     <div id="popup" class="modal">
       <div class="modal-content">
-        <h2>
+        <h2 style="color: rgb(26, 169, 26)">
           Message sent successfully
           <i
             style="color: rgb(26, 169, 26)"
@@ -656,6 +658,29 @@
         <button onclick="toggle()" class="close-button">Close</button>
       </div>
     </div>
+
+    <div id="popup1" class="modal">
+      <div class="modal-content">
+        <div style="display: flex; justify-content: flex-end">
+          <button onclick="toggle_error()">
+            <i class="fa-solid fa-circle-xmark" style="color: red" p></i>
+          </button>
+        </div>
+        <h2 style="color: red">
+          Message was not able to send
+          <i
+            class="fa-solid fa-exclamation-triangle"
+            style="color: #ff5733; margin-left: 2px"
+          ></i>
+        </h2>
+        <p>
+          I appreciate your visit to my website. Currently, my website is
+          experiencing technical difficulties that may affect your experience.
+          Please accept my apologies, and kindly revisit later.
+        </p>
+      </div>
+    </div>
+
     <!-- Scroll Spy Indicator -->
     <div id="scroll-spy">
       <div class="dot active" data-section="section1"></div>

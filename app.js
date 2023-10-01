@@ -64,10 +64,14 @@ form.addEventListener("submit", (e) => {
       form.reset();
       send_btn.innerHTML = "Send message";
     })
-    .catch((error) => console.error("Error!", error.message));
+    .catch((error) => {
+      toggle_error();
+      form.reset();
+      console.error("Error!", error.message);
+    });
 });
 
-// Popup
+// Popup-success message
 function toggle() {
   var blur = document.getElementById("blur");
   var popup = document.getElementById("popup");
@@ -78,6 +82,22 @@ function toggle() {
     document.body.style.overflow = "";
   } else {
     popup.classList.add("active");
+    blur.classList.add("active");
+    document.body.style.overflow = "hidden";
+  }
+}
+
+// Popup1-Error message
+function toggle_error() {
+  var blur = document.getElementById("blur");
+  var popup1 = document.getElementById("popup1");
+
+  if (popup1.classList.contains("active")) {
+    popup1.classList.remove("active");
+    blur.classList.remove("active");
+    document.body.style.overflow = "";
+  } else {
+    popup1.classList.add("active");
     blur.classList.add("active");
     document.body.style.overflow = "hidden";
   }
@@ -118,22 +138,4 @@ dots.forEach((dot) => {
       section.scrollIntoView({ behavior: "smooth" });
     }
   });
-});
-
-// Get a reference to the input element(s) that trigger the keyboard
-const inputElement = document.getElementById("section6");
-
-// Get a reference to the footer element
-const footer = document.querySelector(".footer");
-
-// Listen for the focus event on the input element
-inputElement.addEventListener("focus", () => {
-  // Adjust the layout when the keyboard opens
-  footer.style.marginBottom = "300px"; // Adjust this value as needed
-});
-
-// Listen for the blur event on the input element
-inputElement.addEventListener("blur", () => {
-  // Reset the layout when the keyboard closes
-  footer.style.marginBottom = "0";
 });
