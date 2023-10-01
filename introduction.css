@@ -620,7 +620,7 @@ ul li .descr::before {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   margin: 0 auto;
   padding-left: 50px;
   padding-right: 50px;
@@ -1045,9 +1045,12 @@ textarea.contact-input ~ .icon {
     font-size: 2.5rem;
     width: max-content;
   }
-
+  .intro-text h4 {
+    font-size: 1.5rem;
+  }
   .intro-text p {
     font-size: 1rem;
+    text-align: center;
   }
 
   /* <-----------------About me-----------------> */
