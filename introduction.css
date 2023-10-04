@@ -30,6 +30,7 @@
 }
 
 .hello-text:hover {
+  cursor: pointer;
   transition: 0.5s;
   font-size: 7rem;
   color: #f1e12f;
