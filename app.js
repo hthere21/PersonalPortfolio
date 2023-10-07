@@ -8,15 +8,6 @@ function closeNavbar() {
   checkbox.checked = false;
 }
 
-// Add click event listeners to the menu items
-document.addEventListener("DOMContentLoaded", function () {
-  const menuItems = document.querySelectorAll(".navbar ul li a");
-
-  menuItems.forEach(function (item) {
-    item.addEventListener("click", closeNavbar);
-  });
-});
-
 const inputs = document.querySelectorAll(".contact-input");
 
 inputs.forEach((input) => {
@@ -110,7 +101,6 @@ let activeSection = null;
 
 // Function to update the scroll spy indicator
 function updateScrollSpy() {
-  console.log(sections);
   sections.forEach((section, index) => {
     const rect = section.getBoundingClientRect();
     if (rect.top <= 100 && rect.bottom >= 100) {
@@ -121,8 +111,6 @@ function updateScrollSpy() {
         dots[index].classList.add("active");
 
         activeSection = section;
-
-        console.log("Currently at section:", section.id);
       }
     }
   });
@@ -139,3 +127,25 @@ dots.forEach((dot) => {
     }
   });
 });
+
+//Toggle mobile menu
+function toggleMobileMenu() {
+  var mobileMenu = document.getElementById("mobile-menu");
+  mobileMenu.classList.toggle("show-menu");
+  console.log("Hello");
+}
+
+function closeMobileMenu() {
+  var mobileMenu = document.getElementById("mobile-menu");
+  mobileMenu.classList.remove("show-menu");
+}
+
+// Add click event listeners to the menu items
+document.addEventListener("DOMContentLoaded", function () {
+  const menuItems = document.querySelectorAll(".mobile-menu a");
+
+  menuItems.forEach(function (item) {
+    item.addEventListener("click", closeMobileMenu);
+  });
+});
+

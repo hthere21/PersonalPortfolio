@@ -161,7 +161,7 @@ nav {
     transition: all 0.5s;
     overflow: hidden;
   }
-  
+
   .navbar ul li {
     display: block;
     margin: 20px 0;
@@ -178,13 +178,82 @@ nav {
     color: gold;
     font-size: 1rem;
   }
-  #check:checked ~ ul {
-    left: 0;
-    right: unset;
+
+  #check:checked ~ .mobile-menu {
+    display: block;
   }
   .navbar label.logo {
+    order: -1;
     margin-left: 1.5rem;
   }
+}
+
+/* Mobile menu */
+/* Hide the mobile menu by default */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(127, 200, 248);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 0.5s, opacity 0.5s;
+}
+
+.show-menu {
+  display: block;
+  animation: fade-in 0.5s forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.mobile-menu ul {
+  font-size: 1.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.mobile-menu a {
+  color: gold;
+}
+
+.mobile-menu ul li {
+  margin: 20px 0;
+}
+
+.close-button-container {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.close-button {
+  font-size: 2rem;
+  float: right;
+  color: white;
+  background-color: rgba(127, 200, 248);
+  border: none;
+  margin: 20px;
+  cursor: pointer;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5),
