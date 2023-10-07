@@ -180,10 +180,9 @@ nav {
   }
   #check:checked ~ ul {
     left: 0;
-    right: unset; /* Remove the right property */
+    right: unset;
   }
   .navbar label.logo {
-    order: -1; /* Move the label to the left */
     margin-left: 1.5rem;
   }
 }
