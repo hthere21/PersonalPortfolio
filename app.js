@@ -1,13 +1,3 @@
-//Navbar
-// Function to close the navbar when a menu item is clicked
-function closeNavbar() {
-  // Get the checkbox element
-  const checkbox = document.getElementById("check");
-
-  // Uncheck the checkbox to close the navbar
-  checkbox.checked = false;
-}
-
 const inputs = document.querySelectorAll(".contact-input");
 
 inputs.forEach((input) => {
@@ -132,7 +122,6 @@ dots.forEach((dot) => {
 function toggleMobileMenu() {
   var mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.toggle("show-menu");
-  console.log("Hello");
 }
 
 function closeMobileMenu() {
@@ -148,4 +137,3 @@ document.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("click", closeMobileMenu);
   });
 });
-
