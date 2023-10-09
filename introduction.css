@@ -162,6 +162,7 @@
   padding-top: 100px;
   background-color: #e3f6f5; /* Background color for the about me section */
   height: 100vh;
+  max-height: 100%;
   width: 100vw;
 }
 
@@ -1084,8 +1085,6 @@ textarea.contact-input ~ .icon {
 
   /* <-----------------About me-----------------> */
   .about-me {
-    height: 100vh;
-    max-height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
