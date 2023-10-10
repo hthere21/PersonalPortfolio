@@ -200,6 +200,13 @@
 }
 
 /* CSS for the chat button */
+.about-me-button {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
 .chat-button a {
   font-size: 20px;
   display: inline-block;
@@ -215,7 +222,7 @@
 }
 
 .resume-button {
-  margin: 50px;
+  margin: 30px;
   text-align: center;
   cursor: pointer;
 }
@@ -1118,6 +1125,9 @@ textarea.contact-input ~ .icon {
     font-size: 18px;
   }
 
+  .about-me-button {
+    flex-direction: column;
+  }
   .image-container::after {
     position: absolute;
     content: "";
