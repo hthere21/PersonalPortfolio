@@ -199,6 +199,21 @@
   opacity: 0.8;
 }
 
+/* CSS for the chat button */
+.chat-button a {
+  font-size: 20px;
+  display: inline-block;
+  padding: 15px 20px;
+  background-color: gold;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+.chat-button a:hover {
+  background-color: #ffcc00;
+}
+
 .resume-button {
   margin: 50px;
   text-align: center;
