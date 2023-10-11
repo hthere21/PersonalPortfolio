@@ -7,7 +7,7 @@
   opacity: 0;
   filter: blur(10px);
   transform: translateX(-100%);
-  transition: all 0.7s;
+  transition: all 0.8s;
 }
 
 /* Initially hidden to the left */
