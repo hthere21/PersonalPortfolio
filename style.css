@@ -161,27 +161,6 @@ nav {
     transition: all 0.5s;
     overflow: hidden;
   }
-
-  .navbar ul li {
-    display: block;
-    margin: 20px 0;
-    line-height: 5rem;
-  }
-  .navbar ul li a {
-    font-size: 2rem;
-    padding: 7px 20px;
-  }
-  .navbar ul li a:hover {
-    transform: scale(2);
-    opacity: 1;
-    text-decoration: none;
-    color: gold;
-    font-size: 1rem;
-  }
-
-  #check:checked ~ .mobile-menu {
-    display: block;
-  }
   .navbar label.logo {
     order: -1;
     margin-left: 1.5rem;
