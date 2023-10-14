@@ -1,28 +1,25 @@
 * {
-  padding: 0;
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
-
-body {
+body,
+html {
   font-family: "Roboto", sans-serif;
   background-color: #f5f9ff;
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
   overflow-x: hidden;
+  overflow: auto;
 }
 
 nav {
-  position: absolute;
-  width: calc(100% - 10px);
+  position: relative;
   margin: 5px 5px 10px 5px;
-  margin-left: 5px;
   padding: 5px;
   background: rgba(127, 200, 248, 0.8);
   border-radius: 45px;
@@ -31,7 +28,6 @@ nav {
   justify-content: space-between;
   align-items: center;
   backdrop-filter: blur(10px);
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   z-index: 2;
 }
@@ -130,22 +126,19 @@ nav {
 }
 
 @media (max-width: 952px) {
+  .navbar {
+    width: calc(100% - 10px) !important;
+  }
   .navbar label.logo {
     font-size: 30px;
     padding-left: 10px;
   }
   .navbar nav ul li a {
-    font-size: 16px;
-    padding: 7px 10px;
+    display: hidden;
   }
 }
 
 @media (max-width: 858px) {
-  .navbar {
-    width: 100%;
-    margin: 5px 0 0 0;
-    /* height: 60px; */
-  }
   .checkbtn {
     display: block;
   }
@@ -185,7 +178,7 @@ nav {
 
 .show-menu {
   display: block;
-  animation: fade-in 0.7s forwards;
+  animation: fade-in-from-bottom 0.8s forwards;
 }
 
 @keyframes fade-in {
@@ -195,6 +188,19 @@ nav {
   }
   to {
     opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes fade-in-from-bottom {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+    visibility: visible;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
     visibility: visible;
   }
 }

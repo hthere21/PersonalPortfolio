@@ -122,11 +122,14 @@ dots.forEach((dot) => {
 function toggleMobileMenu() {
   var mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.toggle("show-menu");
+  document.body.style.overflow = "hidden";
 }
 
 function closeMobileMenu() {
   var mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.remove("show-menu");
+  document.body.style.overflow = "auto";
+  document.body.style.overflowX = "hidden";
 }
 
 // Add click event listeners to the menu items
