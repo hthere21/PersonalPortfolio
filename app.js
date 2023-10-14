@@ -64,7 +64,6 @@ function toggle() {
   } else {
     popup.classList.add("active");
     blur.classList.add("active");
-    document.body.style.overflow = "hidden";
   }
 }
 
@@ -80,7 +79,6 @@ function toggle_error() {
   } else {
     popup1.classList.add("active");
     blur.classList.add("active");
-    document.body.style.overflow = "hidden";
   }
 }
 
@@ -101,6 +99,7 @@ function updateScrollSpy() {
         dots[index].classList.add("active");
 
         activeSection = section;
+        console.log(section);
       }
     }
   });
@@ -122,14 +121,14 @@ dots.forEach((dot) => {
 function toggleMobileMenu() {
   var mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.toggle("show-menu");
-  document.body.style.overflow = "hidden";
+  // document.body.style.overflow = "hidden";
 }
 
 function closeMobileMenu() {
   var mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.remove("show-menu");
-  document.body.style.overflow = "auto";
-  document.body.style.overflowX = "hidden";
+  // document.body.style.overflow = "auto";
+  // document.body.style.overflowX = "hidden";
 }
 
 // Add click event listeners to the menu items
