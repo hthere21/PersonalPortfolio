@@ -121,14 +121,13 @@ dots.forEach((dot) => {
 function toggleMobileMenu() {
   var mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.toggle("show-menu");
-  // document.body.style.overflow = "hidden";
+  window.addEventListener("scroll", preventVerticalScroll);
 }
 
 function closeMobileMenu() {
   var mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.remove("show-menu");
-  // document.body.style.overflow = "auto";
-  // document.body.style.overflowX = "hidden";
+  window.removeEventListener("scroll", preventVerticalScroll);
 }
 
 // Add click event listeners to the menu items
@@ -139,3 +138,10 @@ document.addEventListener("DOMContentLoaded", function () {
     item.addEventListener("click", closeMobileMenu);
   });
 });
+
+function preventVerticalScroll(event) {
+  event.preventDefault();
+}
+function enableVerticalScroll() {
+  window.removeEventListener("scroll", preventVerticalScroll);
+}
