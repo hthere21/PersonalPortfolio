@@ -19,10 +19,8 @@
 }
 
 .intro-image {
+  text-align: left;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .intro-text {
@@ -900,7 +898,6 @@ textarea.contact-input ~ .icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .divider {
@@ -1205,6 +1202,12 @@ textarea.contact-input ~ .icon {
     font-size: 16px;
   }
 
+  .intro-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   /* <-----------------About me-----------------> */
   .about-me {
     padding-top: 10px;
@@ -1272,6 +1275,9 @@ textarea.contact-input ~ .icon {
     margin: 0 10px;
   }
 
+  .menu {
+    padding-left: 0px;
+  }
   /* CSS to style the scroll spy dots */
   .dot {
     width: 5px;
