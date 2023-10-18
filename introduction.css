@@ -1310,3 +1310,21 @@ textarea.contact-input ~ .icon {
     font-size: 14px;
   }
 }
+
+#scroll-to-top-button {
+  display: flex;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 5;
+  cursor: pointer;
+  background-color: #2192ff;
+  color: #fff;
+  border: none;
+  border-radius: 60%;
+  padding: 5px 15px;
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}
