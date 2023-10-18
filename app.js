@@ -150,14 +150,17 @@ function enableVerticalScroll() {
 function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: "smooth", // Smooth scrolling
+    behavior: "smooth", 
   });
 }
 
 // Show the scroll-to-top button when the user scrolls down
 window.onscroll = function () {
   var button = document.getElementById("scroll-to-top-button");
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  var section6 = document.getElementById("section5");
+
+  // Check if the user has scrolled to or past section 6
+  if (section6.getBoundingClientRect().top <= 0) {
     button.style.display = "block";
   } else {
     button.style.display = "none";
