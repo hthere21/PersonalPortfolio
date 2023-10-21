@@ -161,7 +161,7 @@
 .about-me {
   padding-top: 100px;
   background-color: #e3f6f5; /* Background color for the about me section */
-  height: 100vh;
+  min-height: 100vh;
   max-height: 100%;
   width: 100vw;
 }
@@ -170,7 +170,7 @@
   display: grid;
   grid-template-columns: 1.8fr 1fr;
   gap: 0px;
-  height: 100vh;
+  height: 100%;
   padding: 40px;
 }
 .about-me h1 {
