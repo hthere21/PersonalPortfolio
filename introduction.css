@@ -159,10 +159,10 @@
 
 /* About me section */
 .about-me {
-  padding-top: 100px;
+  padding-top: 30px;
   background-color: #e3f6f5; /* Background color for the about me section */
   min-height: 100vh;
-  max-height: 100%;
+  max-height: auto;
   width: 100vw;
 }
 
@@ -170,7 +170,7 @@
   display: grid;
   grid-template-columns: 1.8fr 1fr;
   gap: 0px;
-  height: 100%;
+  height: auto;
   padding: 40px;
 }
 .about-me h1 {
@@ -685,6 +685,10 @@ ul li .descr::before {
   background-color: #6ea6f3;
   color: white;
   padding: 10px;
+}
+
+.skill-title h2 {
+  margin: 0;
 }
 .programming-language-list {
   padding: 0;
@@ -1327,4 +1331,9 @@ textarea.contact-input ~ .icon {
   justify-content: center;
   align-items: center;
   opacity: 0.65;
+}
+
+#scroll-to-top-button:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
