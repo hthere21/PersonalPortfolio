@@ -1,13 +1,13 @@
 .fade {
   opacity: 0;
-  transition: all 1.6s;
+  transition: all 1.4s;
 }
 
 .hidden {
   opacity: 0;
   filter: blur(10px);
   transform: translateX(-100%);
-  transition: all 0.8s;
+  transition: all 0.7s;
 }
 
 /* Initially hidden to the left */
