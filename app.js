@@ -121,13 +121,13 @@ dots.forEach((dot) => {
 function toggleMobileMenu() {
   var mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.toggle("show-menu");
-  window.addEventListener("scroll", preventVerticalScroll);
+  document.documentElement.style.overflowY = "hidden";
 }
 
 function closeMobileMenu() {
   var mobileMenu = document.getElementById("mobile-menu");
   mobileMenu.classList.remove("show-menu");
-  window.removeEventListener("scroll", preventVerticalScroll);
+  document.documentElement.style.overflowY = "auto";
 }
 
 // Add click event listeners to the menu items
@@ -139,18 +139,11 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-function preventVerticalScroll(event) {
-  event.preventDefault();
-}
-function enableVerticalScroll() {
-  window.removeEventListener("scroll", preventVerticalScroll);
-}
-
 //Scrolling to the top:
 function scrollToTop() {
   window.scrollTo({
     top: 0,
-    behavior: "smooth", 
+    behavior: "smooth",
   });
 }
 
