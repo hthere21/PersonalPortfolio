@@ -60,10 +60,11 @@ function toggle() {
   if (popup.classList.contains("active")) {
     popup.classList.remove("active");
     blur.classList.remove("active");
-    document.body.style.overflow = "";
+    document.documentElement.style.overflowY = "auto";
   } else {
     popup.classList.add("active");
     blur.classList.add("active");
+    document.documentElement.style.overflowY = "hidden";
   }
 }
 
@@ -75,10 +76,11 @@ function toggle_error() {
   if (popup1.classList.contains("active")) {
     popup1.classList.remove("active");
     blur.classList.remove("active");
-    document.body.style.overflow = "";
+    document.documentElement.style.overflowY = "auto";
   } else {
     popup1.classList.add("active");
     blur.classList.add("active");
+    document.documentElement.style.overflowY = "hidden";
   }
 }
 
