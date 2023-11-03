@@ -22,7 +22,8 @@ body {
 }
 
 nav {
-  position: relative;
+  top: 10px;
+  position: absolute;
   margin: 5px 5px 10px 5px;
   padding: 5px;
   background: rgba(127, 200, 248, 0.8);
