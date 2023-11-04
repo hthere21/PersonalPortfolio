@@ -22,8 +22,8 @@ body {
 }
 
 nav {
-  top: 10px;
-  position: absolute;
+  top: 0.5rem;
+  position: sticky;
   margin: 5px 5px 10px 5px;
   padding: 5px;
   background: rgba(127, 200, 248, 0.8);
@@ -154,7 +154,7 @@ nav {
     height: auto;
     background: rgba(127, 200, 248, 0.9);
     top: 80px;
-    left: -110%;
+    left: -200%;
     text-align: center;
     transition: all 0.5s;
     overflow: hidden;
