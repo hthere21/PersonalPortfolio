@@ -1,3 +1,8 @@
+.tab {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
 .first-intro {
   padding: 0px 50px 0px 50px;
   min-height: 100vh;
@@ -19,7 +24,6 @@
 
 .intro-image {
   text-align: left;
-  position: relative;
 }
 
 .intro-text {
