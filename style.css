@@ -1,8 +1,4 @@
 /* Define a class that disables scrolling */
-.disable-scroll {
-  overflow: hidden;
-}
-
 * {
   text-decoration: none;
   list-style: none;
