@@ -37,33 +37,30 @@
         </ul>
       </div>
     </header>
-
+    <nav class="navbar">
+      <input
+        type="checkbox"
+        name="check"
+        id="check"
+        onclick="toggleMobileMenu()"
+      />
+      <label for="check" class="checkbtn"
+        >&nbsp
+        <span class="fa-solid fa-bars"></span>
+      </label>
+      <label class="logo" id="portfolioLabel">MyPortfolio</label>
+      <ul>
+        <li><a href="#section2">About Me</a></li>
+        <li>
+          <a href="#section3" style="transition: 0.5s">Education</a>
+        </li>
+        <li><a href="#section4" style="transition: 0.5s">Projects</a></li>
+        <li><a href="#section5" style="transition: 0.5s">Skills</a></li>
+        <li><a href="#section6" style="transition: 0.5s">Contact Me </a></li>
+      </ul>
+    </nav>
     <div class="container-body" id="blur">
       <section class="first-intro" id="section1">
-        <nav class="navbar">
-          <input
-            type="checkbox"
-            name="check"
-            id="check"
-            onclick="toggleMobileMenu()"
-          />
-          <label for="check" class="checkbtn"
-            >&nbsp
-            <span class="fa-solid fa-bars"></span>
-          </label>
-          <label class="logo" id="portfolioLabel">MyPortfolio</label>
-          <ul>
-            <li><a href="#section2">About Me</a></li>
-            <li>
-              <a href="#section3" style="transition: 0.5s">Education</a>
-            </li>
-            <li><a href="#section4" style="transition: 0.5s">Projects</a></li>
-            <li><a href="#section5" style="transition: 0.5s">Skills</a></li>
-            <li>
-              <a href="#section6" style="transition: 0.5s">Contact Me </a>
-            </li>
-          </ul>
-        </nav>
         <div class="grid-container">
           <div class="intro-image">
             <img
@@ -118,19 +115,19 @@
                 <span class="about-h2-name">Hai Nguyen</span>
               </h2>
               <p style="margin-top: 20px">
-                <span class="tab"></span>I am currently a third-year Computer Science major at the
+                I am currently a third-year Computer Science major at the
                 University of California, Irvine. I'm passionate about
                 technology and the endless possibilities it offers.
               </p>
               <p>
-                <span class="tab"></span>I believe in the power of innovation and collaboration to drive
+                I believe in the power of innovation and collaboration to drive
                 change. When I'm not coding, you'll find me traveling
                 <i class="fa-solid fa-plane"></i> and playing video games
                 <i class="fa-solid fa-computer"></i>, which provide a creative
                 balance to my technical pursuits.
               </p>
               <p>
-                <span class="tab"></span>Explore my portfolio to see some of my projects and get to know
+                Explore my portfolio to see some of my projects and get to know
                 me better. Feel free to explore my portfolio to see some of my
                 projects and get to know me better. Whether you're a fellow
                 enthusiast or a potential collaborator, I'm eager to connect and
@@ -247,7 +244,7 @@
             <div class="project-details">
               <h2>ITC RoomateFinder</h2>
               <p>
-                <span class="tab"></span>A web app, built with Angular, assists college students in
+                A web app, built with Angular, assists college students in
                 finding rental housing. Express.js handles requests, MongoDB
                 manages data, and Socket.io adds real-time chat. This app
                 streamlines the housing search, offering a modern solution for
@@ -314,7 +311,7 @@
             <div class="project-details">
               <h2>Fablix Movies</h2>
               <p>
-                <span class="tab"></span>Developed a Netflix-inspired web application, leveraging AWS EC2
+                Developed a Netflix-inspired web application, leveraging AWS EC2
                 hosting for secure access. Users can browse movie information
                 from a MySQL database while benefiting from Google Recaptcha
                 security and HTTPS encryption. The frontend communicates with a
@@ -395,7 +392,7 @@
             <div class="project-details">
               <h2>Alternative WebApp-Interaction</h2>
               <p>
-                <span class="tab"></span>Developed a responsive website enabling users to interact and
+                Developed a responsive website enabling users to interact and
                 rate random photos using hand gestures. The project utilizes the
                 Handtrack.js library to recognize various hand gestures via the
                 laptop camera. Additionally, it incorporates a REST API request
@@ -472,11 +469,10 @@
               "
             >
               <p>
-                <span class="tab"></span>One of my favorite hobbies is building personalized computers. I
+                One of my favorite hobbies is building personalized computers. I
                 remember well the first time I turned on a computer I had
                 assembled from various pieces; it was like building my own Iron
-                Man suit. 
-                This exhilarating journey has not only deepened my
+                Man suit. This exhilarating journey has not only deepened my
                 understanding of how the computer works but has also spark my
                 enthusiast toward discovering new technology. It's a delightful
                 experience that infuses my life with both the rush of creating
@@ -652,7 +648,6 @@
           ></a>
         </div>
       </section>
-
       <div class="footer">
         <ul class="menu" style="margin-top: 20px">
           <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
@@ -670,6 +665,7 @@
         <p>Created by @HaiNg-2023 &copy;</p>
       </div>
     </div>
+
     <div id="popup" class="modal">
       <div class="modal-content">
         <h2 style="color: rgb(26, 169, 26)">

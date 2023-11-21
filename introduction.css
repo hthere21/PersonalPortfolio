@@ -1,11 +1,7 @@
-.tab {
-  display: inline-block;
-  margin-left: 0.5em;
-}
-
 .first-intro {
-  padding: 0px 50px 0px 50px;
+  padding: 90px 50px 2rem 50px;
   min-height: 100vh;
+  display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
@@ -24,6 +20,7 @@
 
 .intro-image {
   text-align: left;
+  position: relative;
 }
 
 .intro-text {
@@ -703,7 +700,7 @@ ul li .descr::before {
 
 /* Contact section */
 .contact-section {
-  height: 80vh;
+  height: 90vh;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
@@ -712,6 +709,7 @@ ul li .descr::before {
   gap: 30px;
   width: 100vw;
   background-color: #f5f9ff;
+  position: relative;
 }
 
 .contact-text h2 {
@@ -883,16 +881,15 @@ textarea.contact-input ~ .icon {
 
 /* footer */
 .footer {
-  background-color: #f5f9ff;
-  height: auto;
+  position: absolute;
   width: 100%;
+  background-color: #f5f9ff;
   border-radius: 10px 10px 0 0;
   border: #6ea6f3 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: sticky;
 }
 
 .footer a:hover {
