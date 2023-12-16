@@ -21,8 +21,8 @@ body {
 }
 
 nav {
-  position: sticky;
-  margin: 1.5rem 1.5rem 0px 1.5rem;
+  position: relative;
+  margin: 1rem 1rem 0px 1rem;
   padding: 5px;
   background: rgba(127, 200, 248, 0.8);
   border-radius: 45px;
@@ -129,15 +129,19 @@ nav {
 }
 
 @media (max-width: 952px) {
-  .navbar {
-    width: calc(100% - 10px) !important;
-  }
+  /* .navbar {
+    width: calc(100% - 2px) !important;
+  } */
   .navbar label.logo {
     font-size: 30px;
     padding-left: 10px;
   }
   .navbar nav ul li a {
     display: hidden;
+  }
+  
+  .ul {
+    display: block;
   }
 }
 
@@ -152,7 +156,7 @@ nav {
     height: auto;
     background: rgba(127, 200, 248, 0.9);
     top: 80px;
-    left: -110%;
+    left: -150%;
     text-align: center;
     transition: all 0.5s;
     overflow: hidden;
