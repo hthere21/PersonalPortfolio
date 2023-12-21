@@ -4,6 +4,7 @@
 # Hai's Portfolio
 
 Welcome to the repository for Hai's personal website. This website serves as a showcase of my work, projects, and skills as a software engineer. Below, you'll find information on the structure of the project and how to navigate the repository.
+You can visit the site through this URL: https://haiwebsite.netlify.app/
 
 ## Table of Contents
 
