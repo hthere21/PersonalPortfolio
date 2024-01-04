@@ -1150,6 +1150,7 @@ textarea.contact-input ~ .icon {
   }
 
   /* <-----------------Education-----------------> */
+  
   /* <-----------------Work----------------------> */
   /* <-----------------Skills--------------------> */
   .skill-section {
@@ -1234,6 +1235,10 @@ textarea.contact-input ~ .icon {
   }
   .image-container img {
     width: 100%;
+  }
+
+  .education-section {
+    padding: 0 !important;
   }
 
   /* <-----------------Work-----------------> */
