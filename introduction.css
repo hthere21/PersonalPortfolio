@@ -1246,6 +1246,11 @@ textarea.contact-input ~ .icon {
   .project-image {
     padding: 0 20px;
   }
+
+  .programming-languages li {
+    margin-right: 5px;
+  }
+  
   /* <-----------------Skills-----------------> */
   .technical-skill {
     grid-template-columns: 1fr;
