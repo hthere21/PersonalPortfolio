@@ -1320,8 +1320,8 @@ textarea.contact-input ~ .icon {
   }
 }
 
-@media (max-width: 380px) {
-  .contact-input {
+@media (max-width: 385px) {
+  /* .contact-input {
     padding: 0.6rem;
     font-size: 14px;
   }
@@ -1332,19 +1332,20 @@ textarea.contact-input ~ .icon {
   
   .input-wrap.w-100 {
     grid-column: span 2;
-  }
+  } */
   
   .input-wrap label {
     position: absolute;
     top: 50%;
-    left: calc(1.35rem + 2px);
+    left: calc(1.35rem + 0px);
     transform: translateY(-50%);
     color: grey;
     pointer-events: none;
     transition: 0.25s;
+    font-size: 12px;
   }
   
-  .input-wrap .icon {
+  /* .input-wrap .icon {
     position: absolute;
     right: calc(1.35rem + 2px);
     top: 50%;
@@ -1392,7 +1393,7 @@ textarea.contact-input ~ .icon {
     font-size: 0.5rem;
     top: 0.5rem;
     transform: translateY(0);
-  }
+  } */
   
 }
 #scroll-to-top-button {
