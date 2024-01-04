@@ -1250,7 +1250,7 @@ textarea.contact-input ~ .icon {
   .programming-languages li {
     margin-right: 5px;
   }
-  
+
   /* <-----------------Skills-----------------> */
   .technical-skill {
     grid-template-columns: 1fr;
@@ -1320,6 +1320,12 @@ textarea.contact-input ~ .icon {
   }
 }
 
+@media (max-width: 340px) {
+  .contact-input {
+    padding: 0.75rem;
+    font-size: 14px;
+  }
+}
 #scroll-to-top-button {
   display: none;
   position: fixed;
