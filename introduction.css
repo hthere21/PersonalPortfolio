@@ -1,5 +1,5 @@
 h1 {
-  font-size: 4.5vw !important;
+  font-size: 4.9vw !important;
 }
 h2 {
   font-size: 3.5vh;
@@ -104,7 +104,7 @@ label {
 .scroll-down-button {
   margin-top: 50px;
   height: 40px;
-  width: 160px;
+  width: 200px;
   padding: 3px;
   border: 2px solid transparent;
   position: relative;
@@ -575,7 +575,7 @@ ul li .descr::before {
 }
 
 .programming-languages img {
-  width: 30px;
+  width: 2.5vw;
   height: auto;
 }
 
