@@ -13,6 +13,12 @@ h3 {
 p {
   font-size: 2.3vmin !important;
 }
+a {
+  font-size: 2.3vmin !important;
+}
+label {
+  font-size: 6vmin !important;
+}
 
 .first-intro {
   padding: 90px 50px 2rem 50px;
