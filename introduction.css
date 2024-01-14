@@ -1,5 +1,5 @@
 h1 {
-  font-size: 4.9vw !important;
+  font-size: 4.5vw !important;
 }
 h2 {
   font-size: 3.5vh;
@@ -7,9 +7,6 @@ h2 {
 h3 {
   font-size: 2.5vw !important;
 }
-/* span {
-  font-size: 8vw;
-} */
 p {
   font-size: 2.3vmin !important;
 }
@@ -1096,13 +1093,22 @@ textarea.contact-input ~ .icon {
 /* Responsive adjustments for ipad screens */
 @media (max-width: 968px) {
   h1 {
-    font-size: 5.9vw;
+    font-size: 4.5vh !important;
   }
   h2 {
-    font-size: 3vh;
+    font-size: 3.5vh;
+  }
+  h3 {
+    font-size: 2.5vh !important;
   }
   p {
-    font-size: 3.5vmin;
+    font-size: 2.3vmin !important;
+  }
+  a {
+    font-size: 2.3vmin !important;
+  }
+  .navbar label {
+    font-size: 6vmin !important;
   }
 
   .intro-text h2,
