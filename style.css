@@ -23,7 +23,7 @@ body {
 nav {
   position: relative;
   margin: 1rem 1rem 0px 1rem;
-  padding: 5px;
+  padding: 1vh;
   background: rgba(127, 200, 248, 0.8);
   border-radius: 45px;
   height: auto;

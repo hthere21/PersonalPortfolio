@@ -102,10 +102,9 @@ label {
 }
 
 .scroll-down-button {
-  margin-top: 50px;
   height: 40px;
-  width: 12vw;
-  padding: 3px;
+  width: 12.5vw;
+  padding: 8px;
   border: 2px solid transparent;
   position: relative;
   cursor: pointer;
@@ -115,7 +114,6 @@ label {
   justify-content: center;
   transition: 0.5s;
   margin: 50px auto;
-  position: relative;
   color: white;
   background-color: #f1e12f;
 }
