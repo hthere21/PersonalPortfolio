@@ -1,3 +1,13 @@
+h1 {
+  font-size: 5.9vw;
+}
+h2 {
+  font-size: 3vh;
+}
+p {
+  font-size: 2vmin;
+}
+
 .first-intro {
   padding: 90px 50px 2rem 50px;
   min-height: 100vh;
@@ -1070,6 +1080,16 @@ textarea.contact-input ~ .icon {
 
 /* Responsive adjustments for ipad screens */
 @media (max-width: 968px) {
+  h1 {
+    font-size: 5.9vw;
+  }
+  h2 {
+    font-size: 3vh;
+  }
+  p {
+    font-size: 3.5vmin;
+  }
+
   .intro-text h2,
   .intro-text h3,
   .intro-text p {
@@ -1150,7 +1170,7 @@ textarea.contact-input ~ .icon {
   }
 
   /* <-----------------Education-----------------> */
-  
+
   /* <-----------------Work----------------------> */
   /* <-----------------Skills--------------------> */
   .skill-section {
