@@ -1,17 +1,17 @@
 h1 {
-  font-size: 5.9vw;
+  font-size: 4.9vw !important;
 }
 h2 {
   font-size: 3.5vh;
 }
 h3 {
-  font-size: 3vw;
+  font-size: 2.5vw !important;
 }
 /* span {
   font-size: 8vw;
 } */
 p {
-  font-size: 2.5vmin !important;
+  font-size: 2.3vmin !important;
 }
 
 .first-intro {
