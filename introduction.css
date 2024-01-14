@@ -175,6 +175,10 @@ p {
 
 /* About me section */
 .about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   padding-top: 30px;
   background-color: #e3f6f5; /* Background color for the about me section */
   min-height: 100vh;
