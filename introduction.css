@@ -10,9 +10,9 @@ h3 {
 p {
   font-size: 2.5vmin !important;
 }
-/* a {
-  font-size: 2.3vmin !important;
-} */
+a {
+  font-size: 2.3vmin;
+}
 .navbar label {
   font-size: 6vmin !important;
 }
@@ -1104,9 +1104,9 @@ textarea.contact-input ~ .icon {
   p {
     font-size: 2.3vh !important;
   }
-  /* a {
-    font-size: 2.3vmin !important;
-  } */
+  a {
+    all: unset;
+  }
   .navbar label {
     font-size: 8vmin !important;
   }
@@ -1203,6 +1203,10 @@ textarea.contact-input ~ .icon {
     gap: 20px;
   }
 
+  .programming-language-item {
+    margin: 5px 0;
+    font-size: 2vh;
+  }
   /* <-----------------Contact Me-----------------> */
   /* Popup */
   #popup {
