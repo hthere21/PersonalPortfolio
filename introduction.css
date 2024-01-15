@@ -278,15 +278,15 @@ a {
   left: 20px;
   top: 20px;
   border: 2px solid rgb(48, 48, 253);
-  width: 420px;
-  height: 420px;
+  width: 30vw;
+  height: 45vh;
   z-index: -1;
   border-radius: 10px;
 }
 
 .image-container img {
-  width: 420px;
-  height: 420px;
+  width: 30vw;
+  height: 45vh;
   border-radius: 10px;
 }
 .image-container img:hover {
