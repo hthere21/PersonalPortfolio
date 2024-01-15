@@ -729,7 +729,7 @@ ul li .descr::before {
   height: 100vh;
   align-items: center;
   justify-content: space-between;
-  padding: 3.5rem;
+  padding: 10px;
   display: grid;
   grid-template-columns: 5fr 1fr;
   gap: 30px;
