@@ -726,7 +726,7 @@ ul li .descr::before {
 
 /* Contact section */
 .contact-section {
-  height: 96vh;
+  height: 100vh;
   align-items: center;
   justify-content: space-between;
   padding: 20px;
