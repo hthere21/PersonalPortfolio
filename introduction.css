@@ -726,11 +726,11 @@ ul li .descr::before {
 
 /* Contact section */
 .contact-section {
-  height: 100vh;
+  height: 95vh;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
   display: grid;
+  margin: 1rem;
   grid-template-columns: 5fr 1fr;
   gap: 30px;
   width: 100vw;
