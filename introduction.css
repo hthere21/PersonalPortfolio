@@ -5,14 +5,14 @@ h2 {
   font-size: 3.5vh;
 }
 h3 {
-  font-size: 2.5vw !important;
+  font-size: 2.75vw !important;
 }
 p {
-  font-size: 2.3vmin !important;
+  font-size: 2.5vmin !important;
 }
-a {
+/* a {
   font-size: 2.3vmin !important;
-}
+} */
 .navbar label {
   font-size: 6vmin !important;
 }
@@ -127,7 +127,7 @@ a {
 }
 .scroll-down-text {
   position: relative;
-  margin-right: 10px;
+  margin: 0.5 vw;
 }
 
 .scroll-down-icon {
@@ -507,7 +507,7 @@ ul li .descr::before {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 50px 0;
+  margin: 40px 0;
   padding: 0 50px 0 50px;
 }
 
@@ -1099,16 +1099,16 @@ textarea.contact-input ~ .icon {
     font-size: 3.5vh;
   }
   h3 {
-    font-size: 2.5vh !important;
+    font-size: 3.3vh !important;
   }
   p {
-    font-size: 2.3vmin !important;
+    font-size: 2.3vh !important;
   }
-  a {
+  /* a {
     font-size: 2.3vmin !important;
-  }
+  } */
   .navbar label {
-    font-size: 6vmin !important;
+    font-size: 8vmin !important;
   }
 
   .intro-text h2,
@@ -1139,14 +1139,19 @@ textarea.contact-input ~ .icon {
 
   .intro-text h3 {
     font-size: 2.5rem;
-    width: max-content;
+    /* width: max-content; */
   }
   .intro-text h4 {
     font-size: 1.5rem;
+    text-align: center;
   }
   .intro-text p {
     font-size: 1rem;
     text-align: center;
+  }
+
+  .scroll-down-button {
+    width: 20vh;
   }
 
   /* <-----------------About me-----------------> */
@@ -1295,6 +1300,11 @@ textarea.contact-input ~ .icon {
 
   .programming-languages li {
     margin-right: 5px;
+  }
+
+  .programming-languages img {
+    width: 2.6vh;
+    height: auto;
   }
 
   /* <-----------------Skills-----------------> */
