@@ -843,6 +843,7 @@ textarea.contact-input ~ .icon {
 .input-wrap.focus .contact-input {
   background-color: white;
   border: 2px solid;
+  /* color: #6ea6f3; */
 }
 
 .input-wrap.focus .label {
@@ -855,6 +856,7 @@ textarea.contact-input ~ .icon {
 }
 
 .input-wrap.not-empty label {
+  /* color: #6ea6f3; */
   font-size: 0.66rem;
   top: 0.75rem;
   transform: translateY(0);
@@ -1341,6 +1343,7 @@ textarea.contact-input ~ .icon {
   .contact-section {
     grid-template-columns: 1fr;
     gap: 0;
+    margin: 0;
     height: auto;
     padding: 15px;
   }
