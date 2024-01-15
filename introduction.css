@@ -11,7 +11,7 @@ h3 {
   font-size: 2.65vw;
 }
 p {
-  font-size: 2.5vmin !important;
+  font-size: 2.1vmin !important;
 }
 a {
   font-size: 2.3vmin;
@@ -721,7 +721,7 @@ ul li .descr::before {
 
 .programming-language-item {
   margin: 5px 0;
-  font-size: 2.3vmin;
+  font-size: 2.2vmin;
 }
 
 /* Contact section */
