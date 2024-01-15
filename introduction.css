@@ -104,7 +104,7 @@ a {
 .scroll-down-button {
   height: 40px;
   width: 12.5vw;
-  padding: 1vw;
+  padding: 1.2vw;
   border: 2px solid transparent;
   position: relative;
   cursor: pointer;
@@ -726,7 +726,7 @@ ul li .descr::before {
 
 /* Contact section */
 .contact-section {
-  height: 90vh;
+  height: 96vh;
   align-items: center;
   justify-content: space-between;
   padding: 20px;

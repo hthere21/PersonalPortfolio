@@ -10,6 +10,7 @@
   font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
+
 body {
   margin: 0px;
   padding: 0px;
@@ -18,6 +19,7 @@ body {
   width: 100%;
   height: 100%;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 nav {
