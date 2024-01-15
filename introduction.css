@@ -5,7 +5,7 @@ h2 {
   font-size: 3.5vh;
 }
 h3 {
-  font-size: 2.75vw !important;
+  font-size: 2.75vw;
 }
 p {
   font-size: 2.5vmin !important;
@@ -71,7 +71,7 @@ a {
 .intro-text h3 {
   margin-bottom: 2px;
   color: #f1e12f;
-  font-size: 2rem;
+  font-size: 2.75vw;
   position: relative;
 }
 
@@ -1099,7 +1099,7 @@ textarea.contact-input ~ .icon {
     font-size: 3.5vh;
   }
   h3 {
-    font-size: 3.3vh !important;
+    font-size: 3.3vh;
   }
   p {
     font-size: 2.3vh !important;
@@ -1138,7 +1138,7 @@ textarea.contact-input ~ .icon {
   }
 
   .intro-text h3 {
-    font-size: 2.5rem;
+    font-size: 2.8vh !important;
     /* width: max-content; */
   }
   .intro-text h4 {
