@@ -28,7 +28,7 @@ html {
 
 nav {
   position: relative;
-  margin: 1rem 1rem 0px 1rem;
+  margin: 3vh 3vh 0px 3vh;
   padding: 1vh;
   background: rgba(127, 200, 248, 0.8);
   border-radius: 45px;
@@ -135,9 +135,6 @@ nav {
 }
 
 @media (max-width: 952px) {
-  /* .navbar {
-    width: calc(100% - 2px) !important;
-  } */
   .navbar label.logo {
     font-size: 30px;
     padding-left: 10px;
