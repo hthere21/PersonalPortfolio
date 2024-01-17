@@ -12,6 +12,7 @@
 }
 
 body {
+  align-items: start;
   margin: 0px;
   padding: 0px;
   font-family: "Roboto", sans-serif;
@@ -27,7 +28,8 @@ html {
 }
 
 nav {
-  position: relative;
+  opacity: 0.85;
+  top: 3vh;
   margin: 3vh 3vh 0px 3vh;
   padding: 1vh;
   background: rgba(127, 200, 248, 0.8);

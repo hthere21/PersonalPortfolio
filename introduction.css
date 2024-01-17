@@ -21,9 +21,10 @@ a {
 }
 
 .first-intro {
-  padding: 90px 50px 2rem 50px;
+  /* padding: 90px 50px 2rem 50px; */
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
+  position: initial;
   justify-content: center;
   align-items: center;
   width: 100vw;
