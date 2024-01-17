@@ -105,7 +105,7 @@ a {
 .scroll-down-button {
   height: 40px;
   width: 12.5vw;
-  padding: 1.2vw;
+  padding: 1.2dvw;
   border: 2px solid transparent;
   position: relative;
   cursor: pointer;
@@ -131,7 +131,7 @@ a {
 }
 .scroll-down-text {
   position: relative;
-  margin: 0.5 vw;
+  /* margin-right: 0.5dvh; */
 }
 
 .scroll-down-icon {
@@ -139,8 +139,8 @@ a {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  width: 20px;
-  height: 20px;
+  width: 2dvh;
+  height: 2dvh;
 }
 
 .scroll-down-icon::before,
@@ -156,6 +156,7 @@ a {
   border-top: transparent;
   border-left: transparent;
   animation: scroll-down-icon 1s ease-in-out infinite;
+  margin: 0 0.35dvh 0 0.35dvh;
 }
 .scroll-down-icon::after {
   top: 30%;
