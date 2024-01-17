@@ -1086,11 +1086,11 @@ textarea.contact-input ~ .icon {
 
 /* CSS to style the scroll spy dots */
 .dot {
-  width: 5px;
-  height: 5px;
+  width: 0.8dvh;
+  height: 0.8dvh;
   background-color: #333;
   border-radius: 50%;
-  margin: 8px;
+  margin: 0.8dvh;
   cursor: pointer;
   transition: transform 0.3s;
   opacity: 0.6;
