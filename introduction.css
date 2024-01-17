@@ -735,7 +735,6 @@ ul li .descr::before {
   margin: 2rem;
   grid-template-columns: 5fr 1fr;
   gap: 30px;
-  width: 100vw;
   background-color: #f5f9ff;
   position: relative;
 }
