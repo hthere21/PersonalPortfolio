@@ -21,9 +21,7 @@ a {
 }
 
 .first-intro {
-  /* padding: 90px 50px 2rem 50px; */
   min-height: 100vh;
-  /* display: flex; */
   position: initial;
   justify-content: center;
   align-items: center;
@@ -186,7 +184,7 @@ a {
   align-items: center;
   flex-direction: column;
   padding-top: 30px;
-  background-color: #e3f6f5; /* Background color for the about me section */
+  background-color: #e3f6f5; 
   min-height: 100vh;
   max-height: auto;
   width: 100vw;
@@ -1060,7 +1058,6 @@ textarea.contact-input ~ .icon {
   border: none;
   cursor: pointer;
   font-size: 24px;
-  /* padding: 5px 10px; */
   border-radius: 5px;
   background-color: #fff;
 }
@@ -1131,7 +1128,6 @@ textarea.contact-input ~ .icon {
 
   .first-intro {
     padding: 10px;
-    /* height: auto; */
   }
 
   .intro-text {
@@ -1151,7 +1147,6 @@ textarea.contact-input ~ .icon {
 
   .intro-text h3 {
     font-size: 2.8vh !important;
-    /* width: max-content; */
   }
   .intro-text h4 {
     font-size: 1.5rem;
