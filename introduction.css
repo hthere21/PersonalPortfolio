@@ -1,14 +1,14 @@
 h1 {
-  font-size: 4.3vw !important;
+  font-size: 4.3dvw !important;
 }
 h2 {
-  font-size: 3.5vh;
+  font-size: 3.5dvh;
 }
 h3 {
-  font-size: 2.75vw;
+  font-size: 2.75dvw;
 }
 h3 {
-  font-size: 2.65vw;
+  font-size: 2.65dvw;
 }
 p {
   font-size: 2.1vmin !important;
@@ -309,7 +309,7 @@ a {
   min-height: 100vh;
   display: grid;
   align-content: center;
-  gap: 2rem;
+  gap: 8dvh;
   padding: 2rem;
   font-family: "Poppins", sans-serif;
   color: var(--color);
@@ -336,8 +336,8 @@ a {
 }
 
 .education ul {
-  --col-gap: 2rem;
-  --row-gap: 8rem;
+  --col-gap: 4dvh;
+  --row-gap: 15dvw;
   --line-w: 0.25rem;
   display: grid;
   grid-template-columns: var(--line-w) 1fr;
@@ -374,7 +374,7 @@ a {
 
 /* date */
 .education ul li .date {
-  --dateH: 3rem;
+  --dateH: 6dvh;
   height: var(--dateH);
   margin-inline: calc(var(--inlineP) * -1);
 
@@ -417,13 +417,13 @@ ul li .descr {
 }
 
 .education .descr {
-  padding: 20px 20px 20px 20px;
+  padding: 2dvh;
   border-radius: 20px;
   border: #2d334a 1px solid;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-block-end: 5rem;
+  margin-block-end: 10dvw;
   font-size: 2.3dvh;
 }
 
