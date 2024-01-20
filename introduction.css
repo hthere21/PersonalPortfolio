@@ -21,12 +21,22 @@ a {
 }
 
 .first-intro {
+  display: flex;
+  flex-direction: column;
   min-height: 100vh;
+  height: auto;
   position: initial;
-  justify-content: center;
-  align-items: center;
   width: 100vw;
   background-color: #f5f9ff;
+}
+
+.first-intro_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
 }
 
 .grid-container {
@@ -344,7 +354,7 @@ a {
   grid-auto-columns: max-content;
   column-gap: var(--col-gap);
   list-style: none;
-  width: min(80dvh, 90%);
+  width: min(90dvh, 90%);
   margin-inline: auto;
 }
 
