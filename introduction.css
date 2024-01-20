@@ -111,9 +111,10 @@ a {
 }
 
 .scroll-down-button {
-  height: 40px;
-  width: 12.5vw;
-  padding: 1.2dvw;
+  height: auto;
+  /* min-width: 12.5vw; */
+  width: fit-content;
+  padding: 0.75dvw;
   border: 2px solid transparent;
   position: relative;
   cursor: pointer;
@@ -139,7 +140,7 @@ a {
 }
 .scroll-down-text {
   position: relative;
-  /* margin-right: 0.5dvh; */
+  margin-right: 1dvh;
 }
 
 .scroll-down-icon {
@@ -149,6 +150,8 @@ a {
   transform: translateY(-50%);
   width: 2dvh;
   height: 2dvh;
+  margin-left: 1dvh;
+  padding-left: 1dvh;
 }
 
 .scroll-down-icon::before,
@@ -164,7 +167,7 @@ a {
   border-top: transparent;
   border-left: transparent;
   animation: scroll-down-icon 1s ease-in-out infinite;
-  margin: 0 0.35dvh 0 0.35dvh;
+  margin: 0 0.5dvh 0 0.5dvh;
 }
 .scroll-down-icon::after {
   top: 30%;
