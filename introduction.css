@@ -746,16 +746,11 @@ ul li .descr::before {
   align-items: center;
   justify-content: space-between;
   display: grid;
-  margin: 2rem;
-  grid-template-columns: 5fr 1fr;
-  gap: 30px;
+  margin: 5dvh;
+  grid-template-columns: 4.5fr 1fr;
+  /* gap: 30px; */
   background-color: #f5f9ff;
   position: relative;
-}
-
-.contact-text h2 {
-  font-weight: 1000;
-  font-size: 3rem;
 }
 
 .contact-social-icons {
