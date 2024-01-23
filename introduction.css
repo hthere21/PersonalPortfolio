@@ -196,7 +196,6 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 30px;
   background-color: #e3f6f5;
   min-height: 100vh;
   max-height: auto;
@@ -212,6 +211,7 @@ a {
 }
 .about-me h1 {
   color: #a4b6ca;
+  margin: 2dvh 0 2dvh 0;
 }
 
 .about-me h2 {
@@ -438,7 +438,7 @@ ul li .descr {
   align-items: center;
   margin-block-end: 10dvw;
   font-size: 2.3dvh;
-  background-color: rgb(255, 255, 255)
+  background-color: rgb(255, 255, 255);
 }
 
 .education ul li .title {
@@ -854,7 +854,6 @@ textarea.contact-input ~ .icon {
 .input-wrap.focus .contact-input {
   background-color: white;
   border: 2px solid;
-  color: #6ea6f3;
 }
 
 .input-wrap.focus .label {
