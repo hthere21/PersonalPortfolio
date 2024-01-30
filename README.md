@@ -16,7 +16,6 @@ You can visit the site through this URL: https://haiwebsite.netlify.app/
   - [4. Skills](#skills)
   - [5. Contact Me](#contact-me)
 - [Technical Details](#technical-details)
-- [Usage](#usage)
 - [Contact](#contact)
 - [License](#license)
 
@@ -39,4 +38,4 @@ Connect with me on LinkedIn: [Hai Nguyen](https://www.linkedin.com/in/hai-nguyen
 
 ## License
 
-This project is owned by me.
+This project is owned by me. I hope you enjoy it.
