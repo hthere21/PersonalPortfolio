@@ -38,4 +38,4 @@ Connect with me on LinkedIn: [Hai Nguyen](https://www.linkedin.com/in/hai-nguyen
 
 ## License
 
-This project is owned by me. I hope you enjoy it.
+This project is owned by me. I hope you enjoy it. You can send me any message through the contact section in the website
