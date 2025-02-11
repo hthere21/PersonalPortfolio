@@ -3,7 +3,7 @@
 
 # Hai's Portfolio
 
-Welcome to the repository for Hai's personal website. This website serves as a showcase of my work, projects, and skills as a software engineer. Below, you'll find information on the structure of the project and how to navigate the repository.
+Welcome to the repository for Hai's personal website. This website serves as a showcase of my work, projects, and skills as a software engineer. Below, you'll find information on the structure of the project and how to navigate the repository. I will update the project with NLP and LLM, my plan will include a small LLM model to the server.
 You can visit the site through this URL: https://haiwebsite.netlify.app/
 
 ## Table of Contents
